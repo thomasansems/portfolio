@@ -1,7 +1,7 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, CameraShake, useCursor } from '@react-three/drei'
-import { useRef, useState, useMemo, useLayoutEffect, useEffect } from 'react'
-import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect.js'
+import { useRef, useState, useMemo, useEffect } from 'react'
+import { AsciiEffect } from 'three-stdlib'
 
 export default function Scene({ children, ...props }) {
   return (
@@ -68,11 +68,11 @@ function AsciiRenderer({
     return effect
   }, [characters, invert, color, resolution])
 
-  // Styling
-  useLayoutEffect(() => {
-    effect.domElement.style.color = fgColor
-    effect.domElement.style.backgroundColor = bgColor
-  }, [fgColor, bgColor])
+  // // Styling
+  // useLayoutEffect(() => {
+  //   effect.domElement.style.color = fgColor
+  //   effect.domElement.style.backgroundColor = bgColor
+  // }, [fgColor, bgColor])
 
   // Append on mount, remove on unmount
   useEffect(() => {
@@ -95,4 +95,5 @@ function AsciiRenderer({
   }, renderIndex)
 
   // This component returns nothing, it is a purely logical
+  return null
 }
