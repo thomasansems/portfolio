@@ -70,8 +70,6 @@ module.exports = nextTranslate(
       ]
     },
     webpack: (config, { dev, isServer }) => {
-      // config.resolve.fallback = { fs: false, process: false };
-
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
