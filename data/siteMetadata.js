@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: { en: 'EN Thomas Ansems Dev', nl: 'NL Thomas Ansems Dev' },
+  title: { en: 'Thomas Ansems Develop', nl: 'Thomas Ansems Develop' },
   author: 'Thomas Ansems',
   headerTitle: { en: 'EN Thomas', nl: 'NL Thomas' },
   description: {
