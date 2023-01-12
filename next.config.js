@@ -55,7 +55,6 @@ const securityHeaders = [
 
 module.exports = nextTranslate(
   withBundleAnalyzer({
-    experimental: {},
     reactStrictMode: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx'],
     eslint: {
