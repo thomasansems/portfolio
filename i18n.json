@@ -1,8 +1,11 @@
 {
-  "locales": ["en", "fr"],
+  "locales": ["en", "nl"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common", "headerNavLinks", "newsletter", "404", "SEO"],
-    "/projects": ["projects"]
+    "*": ["common", "headerNavLinks", "404", "SEO"],
+    "/projects": ["projects"],
+    "/contact": ["contact"],
+    "/resume": ["resume"],
+    "/experimental": ["experimental"]
   }
 }

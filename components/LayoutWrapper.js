@@ -7,6 +7,8 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import logo from './../data/me.jpg'
+import Image from 'next/image'
 
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
@@ -29,15 +31,8 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <Image src={logo} className=" rounded-full" width={64} height={64} />
                 </div>
-                {typeof siteMetadata.headerTitle[locale] === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle[locale]}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle[locale]
-                )}
               </div>
             </Link>
           </div>

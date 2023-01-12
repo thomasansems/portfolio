@@ -8,4 +8,4 @@ twitter: https://twitter.com/0xTHAN
 linkedin: https://www.linkedin.com/in/thomas-ansems-16214319/
 ---
 
-Tell something about me.
+Vertel iets over mij.

@@ -1,4 +1,4 @@
-const projectsData = {
+const experimentsData = {
   en: [
     {
       title: 'Webshop - Vivafloors',
@@ -45,4 +45,4 @@ const projectsData = {
   ],
 }
 
-export default projectsData
+export default experimentsData
