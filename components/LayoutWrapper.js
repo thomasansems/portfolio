@@ -1,19 +1,21 @@
+import { useRef } from 'react'
 /* eslint-disable jsx-a11y/no-onchange */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import meJpg from '@/data/me.jpg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import logo from './../data/me.jpg'
 import Image from 'next/image'
-
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
+import dynamic from 'next/dynamic'
+const Scene = dynamic(() => import('@/components/Scene'), { ssr: true })
 
 const LayoutWrapper = ({ children }) => {
+  const ref = useRef()
   const { t } = useTranslation()
   const router = useRouter()
   const { locale, locales, defaultLocale } = router
@@ -25,13 +27,16 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="absolute left-0 top-0 z-0 h-full w-full opacity-25" ref={ref}>
+        <Scene className="pointer-events-none" eventSource={ref} eventPrefix="client" />
+      </div>
+      <div className="relative z-10 flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Image src={logo} className=" rounded-full" width={64} height={64} />
+                  <Image src={meJpg} className=" rounded-full" width={64} height={64} />
                 </div>
               </div>
             </Link>
@@ -70,5 +75,9 @@ const LayoutWrapper = ({ children }) => {
     </SectionContainer>
   )
 }
+
+// Canvas components go here
+// It will receive same props as the Page component (from getStaticProps, etc.)
+// LayoutWrapper.canvas = (props) => <Logo scale={0.5} route='/contact' position-y={-1} />
 
 export default LayoutWrapper

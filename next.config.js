@@ -55,6 +55,7 @@ const securityHeaders = [
 
 module.exports = nextTranslate(
   withBundleAnalyzer({
+    experimental: {},
     reactStrictMode: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -69,10 +70,20 @@ module.exports = nextTranslate(
       ]
     },
     webpack: (config, { dev, isServer }) => {
+      // config.resolve.fallback = { fs: false, process: false };
+
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       })
+
+      // shader support
+      config.module.rules.push({
+        test: /\.(glsl|vs|fs|vert|frag)$/,
+        exclude: /node_modules/,
+        use: ['raw-loader', 'glslify-loader'],
+      })
+
       if (!dev && !isServer) {
         // Replace React with Preact only in client production build
         Object.assign(config.resolve.alias, {
