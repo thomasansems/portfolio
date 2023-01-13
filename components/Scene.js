@@ -5,9 +5,8 @@ import { AsciiEffect } from 'three-stdlib'
 
 export default function Scene({ children, ...props }) {
   return (
-    <Canvas {...props}>
+    <Canvas {...props} camera={{ fov: 155, position: [0, 0, 0] }}>
       <color attach="background" args={['black']} />
-      <OrbitControls makeDefault autoRotate autoRotateSpeed={0.5} zoomSpeed={0.1} />
       <CameraShake
         yawFrequency={1}
         maxYaw={0.05}
@@ -30,11 +29,12 @@ function Torusknot(props) {
   const [clicked, click] = useState(false)
   const [hovered, hover] = useState(false)
   useCursor(hovered)
-  useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 2))
+  useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 5))
   return (
     <mesh
       {...props}
       ref={ref}
+      frustumCulled={false}
       scale={clicked ? 1.5 : 1.25}
       onClick={() => click(!clicked)}
       onPointerOver={() => hover(true)}
@@ -50,7 +50,8 @@ function AsciiRenderer({
   renderIndex = 1,
   bgColor = 'black',
   fgColor = 'white',
-  characters = ' .:-+*=%@#',
+  // characters = ' .:-+*=%@#',
+  characters = ' .:-+*=%@#AWESOMES',
   invert = true,
   color = false,
   resolution = 0.15,

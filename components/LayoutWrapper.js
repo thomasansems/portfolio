@@ -27,7 +27,7 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <SectionContainer>
-      <div className="absolute left-0 top-0 z-0 h-full w-full opacity-25" ref={ref}>
+      <div className="fixed left-0 top-0 z-0 h-full w-full opacity-20" ref={ref}>
         <Scene className="pointer-events-none" eventSource={ref} eventPrefix="client" />
       </div>
       <div className="relative z-10 flex h-screen flex-col justify-between">
@@ -36,7 +36,13 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Image src={meJpg} className=" rounded-full" width={64} height={64} />
+                  <Image
+                    src={meJpg}
+                    alt="Thomas Ansems"
+                    className="rounded-full"
+                    width={64}
+                    height={64}
+                  />
                 </div>
               </div>
             </Link>

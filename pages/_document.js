@@ -33,7 +33,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="overflow-hidden bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
+        <body className=" overflow-x-hidden bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>
