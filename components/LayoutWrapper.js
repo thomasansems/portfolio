@@ -2,7 +2,6 @@ import { useRef } from 'react'
 /* eslint-disable jsx-a11y/no-onchange */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import meJpg from '@/data/me.jpg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
@@ -12,7 +11,7 @@ import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
-const Scene = dynamic(() => import('@/components/Scene'), { ssr: true })
+const Scene = dynamic(() => import('@/components/Scene'), { ssr: false })
 
 const LayoutWrapper = ({ children }) => {
   const ref = useRef()
@@ -31,22 +30,7 @@ const LayoutWrapper = ({ children }) => {
         <Scene className="pointer-events-none" eventSource={ref} eventPrefix="client" />
       </div>
       <div className="relative z-10 flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
-          <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Image
-                    src={meJpg}
-                    alt="Thomas Ansems"
-                    className="rounded-full"
-                    width={64}
-                    height={64}
-                  />
-                </div>
-              </div>
-            </Link>
-          </div>
+        <header className="flex items-center justify-center py-10">
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (

@@ -31,7 +31,6 @@ export default function Experimental({ locale, availableLocales }) {
           </p>
         </div>
         <div className="container py-12">
-          {/* <div className="-m-4 flex flex-wrap"> */}
           {Object.keys(experimentalData[locale])
             .reverse()
             .map((content, index) => (
@@ -47,7 +46,6 @@ export default function Experimental({ locale, availableLocales }) {
                 ))}
               </div>
             ))}
-          {/* </div> */}
         </div>
       </div>
     </>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-title {
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #0f6b92);
+    letter-spacing: calc(1em / 8);
+    padding: calc(calc(1em / 16) / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 12);
+    transition: all 0.3s;
+
+    &:hover {
+        // -webkit-text-stroke-color: green;
+    }
+}
