@@ -26,20 +26,9 @@ export default function Scene({ children, ...props }) {
 
 function Torusknot(props) {
   const ref = useRef()
-  const [clicked, click] = useState(false)
-  const [hovered, hover] = useState(false)
-  useCursor(hovered)
   useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 5))
   return (
-    <mesh
-      {...props}
-      ref={ref}
-      frustumCulled={false}
-      scale={clicked ? 1.5 : 1.25}
-      onClick={() => click(!clicked)}
-      onPointerOver={() => hover(true)}
-      onPointerOut={() => hover(false)}
-    >
+    <mesh {...props} ref={ref} frustumCulled={false}>
       <torusKnotGeometry args={[1, 0.2, 128, 32]} />
       <meshStandardMaterial color="orange" />
     </mesh>

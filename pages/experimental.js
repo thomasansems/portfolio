@@ -1,8 +1,11 @@
 import siteMetadata from '@/data/siteMetadata'
 import experimentalData from '@/data/experimentalData'
-import Card from '@/components/Card'
+import MiniCard from '@/components/MiniCard'
 import { PageSEO } from '@/components/SEO'
 import useTranslation from 'next-translate/useTranslation'
+
+const objectMap = (obj, fn) =>
+  Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v, k, i)]))
 
 export async function getStaticProps({ locale, locales }) {
   return { props: { locale, availableLocales: locales } }
@@ -28,18 +31,23 @@ export default function Experimental({ locale, availableLocales }) {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {experimentalData[locale]?.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-                learn={t('experimental:learn')}
-              />
+          {/* <div className="-m-4 flex flex-wrap"> */}
+          {Object.keys(experimentalData[locale])
+            .reverse()
+            .map((content, index) => (
+              <div key={content}>
+                <h2 className="mb-3 mt-6 text-4xl font-bold leading-8 tracking-tight">{content}</h2>
+                {experimentalData[locale][content].map((content, index) => (
+                  <MiniCard
+                    key={index}
+                    title={content.title}
+                    tools={content.tools}
+                    imgSrc={content.imgSrc}
+                  />
+                ))}
+              </div>
             ))}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </>
