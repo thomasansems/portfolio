@@ -3,18 +3,18 @@ import Link from './Link'
 
 import useTranslation from 'next-translate/useTranslation'
 
-const MinCard = ({ title, tools, imgSrc }) => {
+const MinCard = ({ title, tools, imgSrc, link }) => {
   const { t } = useTranslation()
   return (
     <div className="md py-4" style={{ maxWidth: '644px' }}>
-      <div className="flex items-center overflow-hidden">
+      <Link href={link} target="_blank" className="flex items-center overflow-hidden">
         {imgSrc && (
           <Image
             alt={title}
             src={imgSrc}
             className="object-cover object-center"
-            width={250}
-            height={100}
+            width={400}
+            height={225}
           />
         )}
         <div className="py-0 px-0 md:ml-5">
@@ -27,7 +27,7 @@ const MinCard = ({ title, tools, imgSrc }) => {
             ))}
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }

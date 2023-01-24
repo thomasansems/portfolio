@@ -3,9 +3,9 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common", "headerNavLinks", "404", "SEO"],
+    "/": ["index"],
     "/projects": ["projects"],
     "/contact": ["contact"],
-    "/resume": ["resume"],
-    "/experimental": ["experimental"]
+    "/experiment": ["experiment"]
   }
 }

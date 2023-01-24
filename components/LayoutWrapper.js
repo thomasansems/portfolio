@@ -27,7 +27,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="fixed left-0 top-0 z-0 h-full w-full opacity-20" ref={ref}>
-        <Scene className="pointer-events-none" eventSource={ref} eventPrefix="client" />
+        <Scene eventSource={ref} eventPrefix="client" />
       </div>
       <div className="relative z-10 flex h-screen flex-col justify-between">
         <header className="flex items-center justify-center py-10">

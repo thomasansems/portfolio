@@ -1,8 +1,7 @@
 {
   "home": "Home",
   "blog": "Blog",
-  "experimental": "Experimental",
+  "experiment": "Experiment",
   "projects": "Projects",
-  "resume": "Resume",
   "contact": "Contact"
 }

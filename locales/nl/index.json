@@ -1,0 +1,32 @@
+{
+  "intro": {
+    "title": "Joo, Ik ben Thomas",
+    "content": "Hey, ik ben een senior front-end developer met passie voor kunst en code! Doe graag experimenten en help klanten met liefde om hun website op front-end gebied beter te maken."
+  },
+  "do": {
+    "title0": "Wat doe",
+    "title1": "ik?",
+    "content": [
+      {
+        "title": "Front-end Development",
+        "content": "Sinds 2012 werk ik als front-end developer. Ik maak graag mooie UI's en websites."
+      },
+      {
+        "title": "Front-end Engineering",
+        "content": "UX beter maken is echt m'n ding. Daarvoor gebruikt ik de nieuwste technologieën."
+      },
+      {
+        "title": "Javascript Developer",
+        "content": "Ik werk met Javascript en Typescript. Met voorkeur voor React, Next.js en Three.js."
+      },
+      {
+        "title": "What is next?",
+        "content": "Ik experimenteer altijd en zoek naar de nieuwste ontwikkelingsmogelijkheden. Tegenwoordig duik ik graag in AI en Web3."
+      }
+    ]
+  },
+  "clients": {
+    "title0": "Waarvoor ik gewerkt",
+    "title1": "heb"
+  }
+}

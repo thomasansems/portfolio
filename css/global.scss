@@ -11,8 +11,9 @@
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: calc(1em / 12);
     transition: all 0.3s;
+    cursor: pointer;
 
     &:hover {
-        // -webkit-text-stroke-color: green;
+        letter-spacing: 10px;
     }
 }

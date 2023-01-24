@@ -1,77 +1,21 @@
 const experimentsData = {
   en: {
-    2020: [
-      {
-        title: 'ASCII 2020',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2020',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-    ],
-    2021: [
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-    ],
     2023: [
       {
-        title: 'ASCII 2023',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
+        title: 'ASCII BANANA',
+        tools: ['Three.js', 'R3F', 'Ascii shader', '3d model'],
+        imgSrc: '/static/images/ascii-banana.png',
+        link: 'https://codesandbox.io/s/ascii-banana-fnhvk7?file=/src/App.js',
       },
     ],
   },
   nl: {
-    2020: [
-      {
-        title: 'ASCII 2020',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2020',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-    ],
-    2021: [
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-      {
-        title: 'ASCII 2021',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
-      },
-    ],
     2023: [
       {
-        title: 'ASCII 2023',
-        tools: ['Three.js', 'React', 'Ascii shader'],
-        imgSrc: '/static/images/time-machine.jpg',
+        title: 'ASCII BANANA',
+        tools: ['Three.js', 'R3F', 'Ascii shader', '3d model'],
+        imgSrc: '/static/images/ascii-banana.png',
+        link: 'https://codesandbox.io/s/ascii-banana-fnhvk7?file=/src/App.js',
       },
     ],
   },

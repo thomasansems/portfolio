@@ -1,6 +1,6 @@
 ---
 name: Thomas Ansems
-avatar: /static/images/me.png
+avatar: /static/images/me.jpg
 occupation: Freelance Front-end Developer
 email: me@thomasansems.nl
 github: https://github.com/thomasansems
