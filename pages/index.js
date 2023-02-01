@@ -130,7 +130,7 @@ export default function Home({ posts, locale, availableLocales }) {
           <ul className="">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-              const { slug, date, title, summary, tags } = frontMatter
+              const { slug, date, title, summary } = frontMatter
               return (
                 <li key={slug} className="py-12">
                   <article>
@@ -152,11 +152,6 @@ export default function Home({ posts, locale, availableLocales }) {
                                 {title}
                               </Link>
                             </h2>
-                            <div className="flex flex-wrap">
-                              {tags.map((tag) => (
-                                <Tag key={tag} text={tag} />
-                              ))}
-                            </div>
                           </div>
                           <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                             {summary}
