@@ -1,6 +1,6 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, CameraShake, useCursor, useGLTF } from '@react-three/drei'
-import { useRef, useState, useMemo, useEffect, Suspense } from 'react'
+import { useRef, useState, useMemo, useEffect, Suspense, useLayoutEffect } from 'react'
 import { LayerMaterial, Depth, Fresnel } from 'lamina'
 import { AsciiEffect } from 'three-stdlib'
 import * as THREE from 'three'
@@ -57,7 +57,7 @@ function Model(props) {
       <group rotation={[-Math.PI / 2, 0, 0]}>
         {/* <group rotation={[Math.PI / 2, 0, 0]}> */}
         <group scale={0.34}>
-          <mesh ref={ref} geometry={nodes.Banana_Banana_0.geometry} material={materials.Banana} />
+          <mesh ref={ref} geometry={nodes.Banana_Banana_0.geometry} />
         </group>
         {/* </group> */}
       </group>
@@ -91,7 +91,6 @@ function AsciiRenderer({
   renderIndex = 1,
   bgColor = 'black',
   fgColor = 'white',
-  // characters = ' .:-+*=%@#',
   characters = ' .:-+*=%@#AWESOMES',
   invert = true,
   color = false,
@@ -110,11 +109,11 @@ function AsciiRenderer({
     return effect
   }, [characters, invert, color, resolution])
 
-  // // Styling
-  // useLayoutEffect(() => {
-  //   effect.domElement.style.color = fgColor
-  //   effect.domElement.style.backgroundColor = bgColor
-  // }, [fgColor, bgColor])
+  // Styling
+  useLayoutEffect(() => {
+    effect.domElement.style.color = fgColor
+    effect.domElement.style.backgroundColor = bgColor
+  }, [fgColor, bgColor])
 
   // Append on mount, remove on unmount
   useEffect(() => {

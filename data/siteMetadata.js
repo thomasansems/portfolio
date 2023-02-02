@@ -14,6 +14,7 @@ const siteMetadata = {
   image: '/static/images/me.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'me@thomasansems.nl',
+  mail: 'mailto:me@thomasansems.nl',
   github: 'https://github.com/thomasansems',
   twitter: 'https://twitter.com/0xTHAN',
   linkedin: 'https://www.linkedin.com/in/thomas-ansems-16214319/',

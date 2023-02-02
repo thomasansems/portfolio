@@ -3,7 +3,7 @@ import Link from './Link'
 
 import useTranslation from 'next-translate/useTranslation'
 
-const Card = ({ title, description, imgSrc, href, moreInfoText, logoSrc }) => {
+const Card = ({ title, description, imgSrc, href, moreInfoText, tags }) => {
   const { t } = useTranslation()
   return (
     <div className="md p-4 md:w-1/2" style={{ maxWidth: '644px' }}>
@@ -29,12 +29,15 @@ const Card = ({ title, description, imgSrc, href, moreInfoText, logoSrc }) => {
             />
           ))}
         <div className="py-6 px-0">
-          {logoSrc && (
-            <div className=" float-right">
-              <Image alt={title} src={logoSrc} className="" width={170} height={76} />
+          {tags && (
+            <div className="mr-3 mb-2 text-sm font-medium uppercase text-primary-500 opacity-70">
+              {tags.map((tag) => (
+                <span className="mr-3" key={tag}>
+                  {tag}
+                </span>
+              ))}
             </div>
           )}
-
           <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
@@ -44,6 +47,7 @@ const Card = ({ title, description, imgSrc, href, moreInfoText, logoSrc }) => {
               title
             )}
           </h2>
+
           <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
           {href && (
             <Link

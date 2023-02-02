@@ -37,6 +37,7 @@ export default function Projects({ locale, availableLocales }) {
                 imgSrc={d.imgSrc}
                 href={d.href}
                 logoSrc={d.logoSrc}
+                tags={d.tags}
                 moreInfoText={d.moreInfoText}
               />
             ))}

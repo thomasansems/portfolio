@@ -11,7 +11,7 @@ import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
-// const Scene = dynamic(() => import('@/components/Scene'), { ssr: false })
+const Scene = dynamic(() => import('@/components/Scene'), { ssr: false })
 
 const LayoutWrapper = ({ children }) => {
   const ref = useRef()
@@ -26,9 +26,9 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <SectionContainer>
-      {/* <div className="fixed left-0 top-0 z-0 h-full w-full opacity-20" ref={ref}>
+      <div className="fixed left-0 top-0 z-0 h-full w-full opacity-20" ref={ref}>
         <Scene eventSource={ref} eventPrefix="client" />
-      </div> */}
+      </div>
       <div className="relative z-10 flex h-screen flex-col justify-between">
         <header className="flex items-center justify-center py-10">
           <div className="flex items-center text-base leading-5">

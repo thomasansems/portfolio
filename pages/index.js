@@ -83,7 +83,7 @@ export default function Home({ posts, locale, availableLocales }) {
             </div>
             <div className="md:ml-5">
               <div className="mb-3 mt-4 text-center text-4xl font-extrabold md:text-left">
-                {t('index:intro.title')} {t('index:do.content.0.title')}
+                {t('index:intro.title')}
               </div>
               <div className="text-center text-lg text-gray-500 dark:text-gray-400 md:text-left">
                 {t('index:intro.content')}
