@@ -45,7 +45,7 @@ export default function PostLayout({
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="text-base font-medium leading-6 text-gray-800 dark:text-gray-100">
                     <time dateTime={date}>{formatDate(new Date(date), locale)}</time>
                   </dd>
                 </div>
@@ -82,7 +82,7 @@ export default function PostLayout({
                           {author.twitter && (
                             <Link
                               href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                              className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
                             >
                               {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
@@ -110,20 +110,20 @@ export default function PostLayout({
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <h2 className="text-xs uppercase tracking-wide text-gray-800 dark:text-gray-100">
                           {t('common:preva')}
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
                       <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <h2 className="text-xs uppercase tracking-wide text-gray-800 dark:text-gray-100">
                           {t('common:nexta')}
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -134,7 +134,7 @@ export default function PostLayout({
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
                 >
                   &larr; {t('common:back')}
                 </Link>

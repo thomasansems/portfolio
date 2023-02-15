@@ -34,7 +34,7 @@ export default function PostLayout({
               <dl>
                 <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="text-base font-medium leading-6 text-gray-800 dark:text-gray-100">
                     <time dateTime={date}>{formatDate(date, locale)}</time>
                   </dd>
                 </div>
@@ -57,7 +57,7 @@ export default function PostLayout({
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/blog/${prev.slug}`}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
                     >
                       &larr; {prev.title}
                     </Link>
@@ -67,7 +67,7 @@ export default function PostLayout({
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/blog/${next.slug}`}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
                     >
                       {next.title} &rarr;
                     </Link>

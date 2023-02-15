@@ -30,7 +30,7 @@ const Card = ({ title, description, imgSrc, href, moreInfoText, tags }) => {
           ))}
         <div className="py-6 px-0">
           {tags && (
-            <div className="mr-3 mb-2 text-sm font-medium uppercase text-primary-500 opacity-70">
+            <div className="mr-3 mb-2 text-sm font-medium uppercase text-primary-600 dark:text-primary-400">
               {tags.map((tag) => (
                 <span className="mr-3" key={tag}>
                   {tag}
@@ -48,11 +48,11 @@ const Card = ({ title, description, imgSrc, href, moreInfoText, tags }) => {
             )}
           </h2>
 
-          <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+          <p className="prose mb-3 max-w-none text-gray-800 dark:text-gray-100">{description}</p>
           {href && (
             <Link
               href={href}
-              className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              className="text-base font-medium leading-6 text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
               aria-label={`Link to ${title}`}
             >
               {moreInfoText} &rarr;

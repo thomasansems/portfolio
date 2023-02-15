@@ -23,7 +23,7 @@ const MinCard = ({ title, tools, imgSrc, link }) => {
         )}
         <div className="py-0 px-0 md:ml-5">
           <h3 className="mb-1 text-2xl font-bold leading-8 tracking-tight">{title}</h3>
-          <div className="mr-3 text-sm font-medium uppercase text-primary-500">
+          <div className="mr-3 text-sm font-medium uppercase text-primary-600 dark:text-primary-400">
             {tools.map((tool) => (
               <span className="mr-3" key={tool}>
                 {tool}
