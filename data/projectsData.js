@@ -9,12 +9,20 @@ const projectsData = {
       moreInfoText: 'Try a joke',
     },
     {
+      title: 'Takeaway platform',
+      tags: ['Vue', 'Laravel', 'Bootstrap'],
+      description: `In collaboration with a team of backend developers, we created a Takeaway platform for small-scale enterprises. By utilizing Laravel with Vue, we expedited the development of this application while ensuring it remains search engine optimized.`,
+      imgSrc: '/static/images/chow.jpg',
+      href: 'https://www.chow.nl',
+      moreInfoText: 'Visit chow',
+    },
+    {
       title: 'Maintaining a Woocommerce for years',
       tags: ['Wordpress', 'Woocommerce', 'Twig', 'Bootstrap', 'SEO'],
       description: `I have been building, providing support and maintenance for Vivafloors' website, vivafloors.nl, for the past two years. This international webshop is built on WordPress and utilizes the WooCommerce platform. Additionally, we employ marketing automation to enhance the customer experience.`,
       imgSrc: '/static/images/woocommerce-vivafloors.jpg',
       href: 'https://www.vivafloors.nl',
-      moreInfoText: 'Check de webshop',
+      moreInfoText: 'View webshop',
     },
     {
       title: 'A interactive digital Christmas experience',
@@ -41,6 +49,14 @@ const projectsData = {
       imgSrc: '/static/images/aiisajoke.jpg',
       href: 'https://www.aiisajoke.com',
       moreInfoText: 'Try a joke',
+    },
+    {
+      title: 'Takeaway-platform',
+      tags: ['Vue', 'Laravel', 'Bootstrap'],
+      description: `Samen met een team van back-end ontwikkelaars hebben we een Takeaway-platform gebouwd voor lokale bedrijven. Door gebruik te maken van Vue met Laravel konden we deze applicatie in een snel tempo ontwikkelen en toch seo-vriendelijk maken.`,
+      imgSrc: '/static/images/chow.jpg',
+      href: 'https://www.chow.nl',
+      moreInfoText: 'Visit chow',
     },
     {
       title: 'Internationale WooCommerce shop',

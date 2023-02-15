@@ -2,7 +2,7 @@ const experimentsData = {
   en: {
     2022: [
       {
-        title: 'If you forgot a discoball',
+        title: 'If you forgot the discoball',
         tools: ['Three.js', '3d model'],
         imgSrc: '/static/images/discoball.jpg',
         link: 'https://d-dance-discoball.vercel.app/',
