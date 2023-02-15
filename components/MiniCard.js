@@ -10,7 +10,7 @@ const MinCard = ({ title, tools, imgSrc, link }) => {
       <Link
         href={link}
         target="_blank"
-        className="flex cursor-pointer items-center overflow-hidden"
+        className="flex cursor-pointer flex-col overflow-hidden md:flex-row md:items-center"
       >
         {imgSrc && (
           <Image
@@ -21,7 +21,7 @@ const MinCard = ({ title, tools, imgSrc, link }) => {
             height={225}
           />
         )}
-        <div className="py-0 px-0 md:ml-5">
+        <div className="py-0 px-0 pt-4 md:ml-5 md:pt-0">
           <h3 className="mb-1 text-2xl font-bold leading-8 tracking-tight">{title}</h3>
           <div className="mr-3 text-sm font-medium uppercase text-primary-600 dark:text-primary-400">
             {tools.map((tool) => (
