@@ -16,4 +16,8 @@
     &:hover {
         letter-spacing: 10px;
     }
+
+    html.light & {
+        color: #cccccc;
+    }
 }
