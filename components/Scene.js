@@ -1,24 +1,24 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { OrbitControls, CameraShake, useCursor, useGLTF } from '@react-three/drei'
-import { useRef, useState, useMemo, useEffect, Suspense, useLayoutEffect } from 'react'
-import { LayerMaterial, Depth, Fresnel } from 'lamina'
+import { useGLTF } from '@react-three/drei'
+import { useRef, useMemo, useEffect, Suspense, useLayoutEffect } from 'react'
 import { AsciiEffect } from 'three-stdlib'
 import * as THREE from 'three'
+import Banana from '@/public/banana.glb'
 
 export default function Scene({ children, ...props }) {
   return (
-    <Canvas {...props} camera={{ position: [0, 10, 0] }}>
-      <Suspense fallback={null}>
+    <Suspense fallback={null}>
+      <Canvas {...props} camera={{ position: [0, 10, 0] }}>
         <color attach="background" args={['black']} />
         <spotLight position={[10, 10, 10]} angle={0.45} penumbra={1} intensity={0.5} />
         <pointLight position={[-10, -10, -10]} />
         <ambientLight intensity={0.4} />
         <Model />
-      </Suspense>
 
-      <Rig />
-      <AsciiRenderer fgColor="white" bgColor="black" />
-    </Canvas>
+        <Rig />
+        <AsciiRenderer fgColor="white" bgColor="black" />
+      </Canvas>
+    </Suspense>
   )
 }
 
@@ -33,7 +33,7 @@ const Rig = () => {
 
 function Model(props) {
   const ref = useRef()
-  const { nodes, materials } = useGLTF('/banana.glb')
+  const { nodes, materials } = useGLTF(Banana)
 
   useFrame((state, delta) => {
     ref.current.rotation.x = ref.current.rotation.y += delta / 5

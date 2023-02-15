@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: linear-gradient(-45deg, #242424, #1a1b38, #0b2630, #1f342f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+
+    html.light & {
+        background: linear-gradient(-45deg, #cbd1ee, #e7e7e7, #f8e7da, #e2f8f3);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+}
+
 
 .custom-title {
     background-clip: text;
@@ -12,12 +26,28 @@
     -webkit-text-stroke-width: calc(1em / 12);
     transition: all 0.3s;
     cursor: pointer;
+    color: #1a1b38;
 
     &:hover {
         letter-spacing: 10px;
     }
 
     html.light & {
-        color: #cccccc;
+        background-image: linear-gradient(to right, #0fb68c, #0f6b92);
+        color: #e7e7e7;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }

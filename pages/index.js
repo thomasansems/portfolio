@@ -56,12 +56,6 @@ export default function Home({ posts, locale, availableLocales }) {
   const { t } = useTranslation()
   const doContent = t('index:do.content')
 
-  useEffect(() => {
-    console.log('doContent ', doContent)
-    console.log('Title ', t('index:do.content.0.title'))
-    console.log('Intro ', t('index:intro.title'))
-  }, [])
-
   return (
     <>
       <PageSEO
