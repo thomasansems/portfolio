@@ -9,6 +9,14 @@ const projectsData = {
       moreInfoText: 'Try a joke',
     },
     {
+      title: 'Dancing NFT collection on the blockchain',
+      tags: ['Threejs', 'Web3', 'Solidity', 'Next.js', 'Python', 'IPFS'],
+      description: `Building a 3D NFT platform with a team of enthusiastic NFT enthusiasts where art, music, and movement come together. Working with the latest technologies to create a unique experience in Three.js.`,
+      imgSrc: '/static/images/dedance-nft-web3-project.jpg',
+      href: '/contact',
+      moreInfoText: 'Ask for a demo',
+    },
+    {
       title: 'Takeaway platform',
       tags: ['Vue', 'Laravel', 'Bootstrap'],
       description: `In collaboration with a team of backend developers, we created a Takeaway platform for small-scale enterprises. By utilizing Laravel with Vue, we expedited the development of this application while ensuring it remains search engine optimized.`,
@@ -49,6 +57,14 @@ const projectsData = {
       imgSrc: '/static/images/aiisajoke.jpg',
       href: 'https://www.aiisajoke.com',
       moreInfoText: 'Try a joke',
+    },
+    {
+      title: 'Een dansende NFT collectie',
+      tags: ['Threejs', 'Web3', 'Solidity', 'Next.js', 'Python', 'IPFS'],
+      description: `Coming soon. Met een team van enthousiaste NFT-liefhebbers bouwen we aan een 3D NFT-platform waar kunst, muziek en beweging samenkomen. Ik werk hierbij met de nieuwste technologieën als Three.js om een unieke ervaring te creëren voor iedere browser.`,
+      imgSrc: '/static/images/dedance-nft-web3-project.jpg',
+      href: '/contact',
+      moreInfoText: 'Vraag om een demo',
     },
     {
       title: 'Takeaway-platform',
