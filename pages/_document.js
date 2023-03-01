@@ -32,6 +32,12 @@ class MyDocument extends Document {
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
           />
+          <script
+            async
+            defer
+            data-website-id="6aec0525-8659-4bcc-9073-84f6c516d687"
+            src="https://umami-one-gray.vercel.app/umami.js"
+          ></script>
         </Head>
         <body className=" overflow-x-hidden bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
