@@ -1,7 +1,7 @@
 {
   "intro": {
     "title": "Joo, Ik ben Thomas",
-    "content": "Hey, ik ben een senior front-end developer met passie voor kunst en code! Doe graag experimenten en help klanten met liefde om hun website op front-end gebied beter te maken."
+    "content": "Hey, ik ben een senior front-end developer en consultant met een passie voor kunst, code en strategie! Ik help klanten niet alleen met front-end uitdagingen, maar ook met het ontwikkelen van een robuuste digitale visie."
   },
   "do": {
     "title0": "Wat doe",
@@ -9,19 +9,23 @@
     "content": [
       {
         "title": "Front-end Development",
-        "content": "Sinds 2012 werk ik als front-end developer. Ik maak graag mooie UI's en websites."
+        "content": "Sinds 2012 werk ik als front-end developer. Ik maak graag gebruiksvriendelijke en schaalbare UI's en websites."
       },
       {
         "title": "Front-end Engineering",
-        "content": "UX beter maken is echt m'n ding. Daarvoor gebruikt ik de nieuwste technologieën."
+        "content": "Ik verbeter UX en performance door de nieuwste technologieën en frameworks toe te passen. Typescript is daarbij een belangrijk onderdeel van mijn workflow."
       },
       {
-        "title": "Javascript Developer",
-        "content": "Ik werk met Javascript en Typescript. Met voorkeur voor React, Next.js en Three.js."
+        "title": "Javascript en Typescript Specialist",
+        "content": "Met ruime ervaring in Javascript en Typescript werk ik graag met tools zoals React, Next.js, Three.js en geavanceerde tooling voor complexe projecten."
+      },
+      {
+        "title": "Digitale Consultancy",
+        "content": "Ik werk samen met bedrijven en startups om strategie, UX, toegankelijkheid en architectuur te verbeteren."
       },
       {
         "title": "What is next?",
-        "content": "Ik experimenteer altijd en zoek naar de nieuwste ontwikkelingsmogelijkheden. Tegenwoordig duik ik graag in AI en Web3."
+        "content": "Ik blijf experimenteren en mijn kennis uitbreiden. Momenteel richt ik me op AI-integratie, Web3-oplossingen en enterprise-level development."
       }
     ]
   },

@@ -16,7 +16,6 @@ const siteMetadata = {
   email: 'me@thomasansems.nl',
   mail: 'mailto:me@thomasansems.nl',
   github: 'https://github.com/thomasansems',
-  twitter: 'https://twitter.com/0xTHAN',
   linkedin: 'https://www.linkedin.com/in/thomas-ansems-16214319/',
   locale: 'en-US',
   analytics: {

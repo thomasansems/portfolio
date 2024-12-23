@@ -11,7 +11,6 @@ export default function Footer() {
       <div className="mb-3 flex justify-center space-x-4">
         <SocialIcon kind="github" href={siteMetadata.github} size="5" />
         <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
-        <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" />
       </div>
       <div className={`mt-16 mb-4 flex flex-col `}>
         <div className="mb-6 flex justify-center space-x-2 text-sm text-gray-800 dark:text-gray-100">

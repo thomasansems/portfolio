@@ -89,7 +89,7 @@ export default function Home({ posts, locale, availableLocales }) {
         <ContentItem title1={t('index:do.title0')} title2={t('index:do.title1')}>
           <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
             <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
-              {Array.apply(null, Array(4)).map((item, key) => (
+              {Array.apply(null, Array(5)).map((item, key) => (
                 <div
                   key={key}
                   className="relative flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-start sm:justify-start md:flex-col lg:flex-row"

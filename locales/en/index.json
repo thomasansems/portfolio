@@ -1,32 +1,36 @@
 {
   "intro": {
-    "title": "Hi, I'm Thomas",
-    "content": "Hey there! I'm Thomas Ansems and I hail from the Netherlands. As a senior Web developer, I get lost in my work and forget all about time because I love what I do! I also enjoy blending my passion for art and code by experimenting with new techniques and pushing boundaries."
+    "title": "Hi, I am Thomas",
+    "content": "Hey, I am a senior front-end developer and consultant with a passion for art, code, and strategy! I help clients not only with front-end challenges but also with developing a robust digital vision."
   },
   "do": {
-    "title0": "What I",
-    "title1": "do",
+    "title0": "What do",
+    "title1": "I do?",
     "content": [
       {
         "title": "Front-end Development",
-        "content": "Since 2012 I have been working as a front-end developer. I love to build beautiful ui's and websites."
+        "content": "Since 2012, I have been working as a front-end developer. I enjoy creating user-friendly and scalable UIs and websites."
       },
       {
         "title": "Front-end Engineering",
-        "content": "Loving to continuously make UX better and better by using the latest technologies."
+        "content": "I enhance UX and performance by applying the latest technologies and frameworks. Typescript is an essential part of my workflow."
       },
       {
-        "title": "Javascript Developer",
-        "content": "I love to work with Javascript and Typescript. I have a lot of experience with React, Next.js and Three.js."
+        "title": "JavaScript and TypeScript Specialist",
+        "content": "With extensive experience in JavaScript and TypeScript, I love working with tools like React, Next.js, Three.js, and advanced tooling for complex projects."
+      },
+      {
+        "title": "Digital Consultancy",
+        "content": "I collaborate with businesses and startups to improve strategy, UX, accessibility, and architecture."
       },
       {
         "title": "What is next?",
-        "content": "I'm always like to experiment and search for the latest opportunities in development. Newadays I am also interested in AI and Web3 development."
+        "content": "I continuously experiment and expand my knowledge. Currently, I am focusing on AI integration, Web3 solutions, and enterprise-level development."
       }
     ]
   },
   "clients": {
-    "title0": "Clients I worked",
-    "title1": "with"
+    "title0": "Who I have worked",
+    "title1": "for"
   }
 }

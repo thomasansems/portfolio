@@ -30,7 +30,6 @@ export default function Contact({ locale, availableLocales }) {
             <div className="mb-3 flex justify-center space-x-4">
               <SocialIcon kind="mail" href={siteMetadata.mail} size="8" />
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="8" />
-              <SocialIcon kind="twitter" href={siteMetadata.twitter} size="8" />
             </div>
           </div>
         </div>
