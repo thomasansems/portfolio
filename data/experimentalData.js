@@ -18,7 +18,7 @@ const experimentsData = {
     ],
     2024: [
       {
-        title: 'Het is niet wat het lijkt..',
+        title: 'Its not what you think',
         tools: ['Three.js', 'Typescript', 'Kunst'],
         imgSrc: '/static/images/retro-artpiece.png',
         link: 'https://experment-retro-sphere-etc.vercel.app/',
@@ -44,7 +44,7 @@ const experimentsData = {
     ],
     2024: [
       {
-        title: 'Its not what you think',
+        title: 'Het is niet wat het lijkt..',
         tools: ['Three.js', 'Typescript', 'Art'],
         imgSrc: '/static/images/retro-artpiece.png',
         link: 'https://experment-retro-sphere-etc.vercel.app/',
