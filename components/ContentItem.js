@@ -6,8 +6,7 @@ export default function ContentItem({ children, title1, title2 }) {
           className="mb-3 text-4xl 
                 font-extrabold text-black  dark:text-white"
         >
-          {title1 && <span>{title1} </span>}
-          <span className="custom-title text-white dark:text-black">{title2}</span>
+          {title1 && title1}
         </div>
       </div>
       <div>{children}</div>
