@@ -1,6 +1,14 @@
 const projectsData = {
   en: [
     {
+      title: 'Live chat with BMW Group',
+      tags: ['React', 'Typescript', 'NodeJS', 'Websocket', 'A11y'],
+      description: `Developed the live chat widget for BMW Group, used globally to assist customers quickly and effectively. Also built the internal widget management tool, implemented accessibility improvements, and optimized the user experience across platforms.`,
+      imgSrc: '/static/images/bmw-website-live-chat.jpg',
+      href: 'https://www.bmw.co.uk',
+      moreInfoText: 'See "Live chat" on BMW.co.uk',
+    },
+    {
       title: 'Experimental website with AI',
       tags: ['ChatGPT', 'Midjourney', 'Next.js', 'NodeJS'],
       description: `Its december 2022, a tool called ChatGPT came to earth, time stood still and like a lot of people, I expermented with some friends to see what it could do. We built a experimentals site to see what it can do. Do you think Uncle AI is funny?`,
@@ -51,12 +59,20 @@ const projectsData = {
   ],
   nl: [
     {
-      title: 'Experimental website with AI',
+      title: 'Live chat voor BMW Group',
+      tags: ['React', 'Typescript', 'NodeJS', 'Websocket', 'A11y'],
+      description: `Live chat-widget voor BMW Group. Wereldwijd wordt deze ingezet om klanten zo snel mogelijk te helpen. Daarnaast bouwde ik een interne beheertool voor de widget, verbeterde ik de toegankelijkheid (a11y) en optimaliseerde ik de gebruikerservaring op verschillende platformen.`,
+      imgSrc: '/static/images/bmw-website-live-chat.jpg',
+      href: 'https://www.bmw.nl',
+      moreInfoText: 'Zie "Live chat" op BMW.nl',
+    },
+    {
+      title: 'Experimentele website met AI',
       tags: ['ChatGPT', 'Midjourney', 'Next.js', 'NodeJS'],
-      description: `Its december 2022, a tool called ChatGPT came to earth, time stood still and like a lot of people, I expermented with some friends to see what it could do. We built a website with it and it was a lot of fun. Do you think Uncle AI is funny?`,
+      description: `Het is december 2022. Een tool genaamd ChatGPT kwam op aarde, de tijd stond even stil, en net als veel anderen ben ik met wat vrienden gaan experimenteren om te kijken wat het kon. We bouwden een website en hadden er veel plezier mee. Denk jij dat Oom AI grappig is?`,
       imgSrc: '/static/images/aiisajoke.jpg',
       href: 'https://www.aiisajoke.com',
-      moreInfoText: 'Try a joke',
+      moreInfoText: 'Probeer een grap',
     },
     {
       title: 'Een dansende NFT collectie',

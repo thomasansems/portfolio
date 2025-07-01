@@ -11,6 +11,7 @@ import logoVivafloors from '@/data/logos/vivafloors.png'
 import logoConnexxion from '@/data/logos/connexxion.png'
 import logoNedap from '@/data/logos/nedap.png'
 import logoWorkday from '@/data/logos/workday.png'
+import logoBMWGroup from '@/data/logos/bmw-group.png'
 import Image from 'next/image'
 import ContentItem from '@/components/ContentItem'
 import useTranslation from 'next-translate/useTranslation'
@@ -19,6 +20,10 @@ import { useEffect } from 'react'
 const MAX_DISPLAY = 3
 
 const LOGOS = [
+  {
+    title: 'BMW Group',
+    logo: logoBMWGroup,
+  },
   {
     title: 'Centraal Beheer',
     logo: logoCentraalBeheer,
