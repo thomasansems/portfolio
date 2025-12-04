@@ -1,18 +1,18 @@
 {
   "intro": {
-    "title": "Hi, I am Thomas",
-    "content": "Hey, I am a senior front-end developer and consultant with a passion for art, code, and strategy! I help clients not only with front-end challenges but also with developing a robust digital vision."
+    "title": "Hi, lets build something together?",
+    "content": "Hey, I am a senior Full-stack developer and consultant with a passion for art, code, and strategy! I help clients not only with Full-stack challenges but also with developing a robust digital vision."
   },
   "do": {
     "title0": "What do",
     "title1": "I do?",
     "content": [
       {
-        "title": "Front-end Development",
-        "content": "Since 2012, I have been working as a front-end developer. I enjoy creating user-friendly and scalable UIs and websites."
+        "title": "Full-stack Development",
+        "content": "Since 2012, I have been working as a Full-stack developer. I enjoy creating user-friendly and scalable UIs and websites."
       },
       {
-        "title": "Front-end Engineering",
+        "title": "Full-stack Engineering",
         "content": "I enhance UX and performance by applying the latest technologies and frameworks. Typescript is an essential part of my workflow."
       },
       {

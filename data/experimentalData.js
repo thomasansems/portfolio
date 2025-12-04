@@ -19,7 +19,7 @@ const experimentsData = {
     2024: [
       {
         title: 'Its not what you think',
-        tools: ['Three.js', 'Typescript', 'Kunst'],
+        tools: ['Three.js', 'Typescript', 'Art'],
         imgSrc: '/static/images/retro-artpiece.png',
         link: 'https://experment-retro-sphere-etc.vercel.app/',
       },

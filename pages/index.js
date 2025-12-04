@@ -4,7 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-import meJpg from '@/data/me.jpg'
+import meJpg from '@/data/me.jpeg'
 import logoCentraalBeheer from '@/data/logos/centraalbeheer.png'
 import logoPreZero from '@/data/logos/pre-zero.png'
 import logoVivafloors from '@/data/logos/vivafloors.png'
@@ -91,8 +91,8 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </div>
 
-        <ContentItem title1={t('index:do.title0')} title2={t('index:do.title1')}>
-          <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
+        <ContentItem>
+          <div className="mt-0 max-w-lg sm:mx-auto md:max-w-none">
             <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
               {Array.apply(null, Array(5)).map((item, key) => (
                 <div
@@ -113,7 +113,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </ContentItem>
 
-        <ContentItem title1={t('index:clients.title0')} title2={t('index:clients.title1')}>
+        <ContentItem>
           <div className="flex justify-center">
             <div className="grid max-w-3xl grid-cols-2 gap-4 pt-12 md:grid-cols-3">
               {LOGOS.map((item, key) => (
@@ -125,7 +125,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </ContentItem>
 
-        <ContentItem title2="Blog">
+        {/* <ContentItem title2="Blog">
           <ul className="">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -172,7 +172,7 @@ export default function Home({ posts, locale, availableLocales }) {
               )
             })}
           </ul>
-        </ContentItem>
+        </ContentItem> */}
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">

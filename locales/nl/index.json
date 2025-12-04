@@ -1,18 +1,16 @@
 {
   "intro": {
-    "title": "Ik ben dus Thomas",
-    "content": "Een senior front-end developer en consultant met een passie voor code, kunst en strategie! Ik help klanten niet alleen met front-end uitdagingen, maar ook met het ontwikkelen van een robuuste digitale visie."
+    "title": "Hey, samen aan iets bouwen?",
+    "content": "Ik ben Thomas Ansems, een senior Full-stack developer en consultant met een passie voor code, kunst en strategie! Ik help klanten niet alleen met front-end uitdagingen, maar ook met het ontwikkelen van een robuuste digitale visie."
   },
   "do": {
-    "title0": "Wat doe",
-    "title1": "ik?",
     "content": [
       {
-        "title": "Front-end Development",
-        "content": "Sinds 2012 werk ik als front-end developer. Ik maak graag gebruiksvriendelijke en schaalbare UI's en websites."
+        "title": "Full-stack Development",
+        "content": "Sinds 2012 werk ik als Full-stack developer. Ik maak graag gebruiksvriendelijke en schaalbare UI's en websites."
       },
       {
-        "title": "Front-end Engineering",
+        "title": "Full-stack Engineering",
         "content": "Ik verbeter UX en performance door de nieuwste technologieën en frameworks toe te passen. Typescript is daarbij een belangrijk onderdeel van mijn workflow."
       },
       {
