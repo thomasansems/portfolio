@@ -9,7 +9,13 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:all": "npm run test && npm run test:e2e"
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
@@ -55,7 +61,12 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.1.4",
+    "@playwright/test": "^1.57.0",
     "@svgr/webpack": "^6.1.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^5.1.2",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",
     "eslint": "^7.29.0",
@@ -66,8 +77,10 @@
     "globby": "11.0.3",
     "glslify": "^7.1.1",
     "glslify-loader": "^2.0.0",
+    "happy-dom": "^20.0.11",
     "husky": "^6.0.0",
     "inquirer": "^8.1.1",
+    "jsdom": "^27.4.0",
     "lint-staged": "^11.0.0",
     "next-remote-watch": "^1.0.0",
     "prettier": "^2.5.1",
@@ -76,7 +89,8 @@
     "sass": "^1.57.1",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "vitest": "^4.0.16"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
