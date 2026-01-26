@@ -13,8 +13,8 @@ const generateLinks = (router, availableLocales) =>
         locale === router.defaultLocale
           ? 'canonical'
           : !availableLocales.includes(router.defaultLocale) && locale === availableLocales[0]
-          ? 'canonical'
-          : 'alternate'
+            ? 'canonical'
+            : 'alternate'
       }
       hrefLang={locale}
       href={`${siteMetadata.siteUrl}${locale === router.defaultLocale ? '' : `/${locale}`}${
@@ -154,8 +154,8 @@ export const BlogSEO = ({
     images.length === 0
       ? [siteMetadata.socialBanner]
       : typeof images === 'string'
-      ? [images]
-      : images
+        ? [images]
+        : images
 
   const featuredImages = imagesArr.map((img) => {
     return {
@@ -240,12 +240,7 @@ export const BlogSEO = ({
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         {availableLocales && generateLinks(router, availableLocales)}
         {/* Markdown auto-discovery for AI crawlers (Third Audience) */}
-        <link
-          rel="alternate"
-          type="text/markdown"
-          href={`${url}.md`}
-          title="Markdown version"
-        />
+        <link rel="alternate" type="text/markdown" href={`${url}.md`} title="Markdown version" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
