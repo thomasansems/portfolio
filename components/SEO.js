@@ -13,8 +13,8 @@ const generateLinks = (router, availableLocales) =>
         locale === router.defaultLocale
           ? 'canonical'
           : !availableLocales.includes(router.defaultLocale) && locale === availableLocales[0]
-            ? 'canonical'
-            : 'alternate'
+          ? 'canonical'
+          : 'alternate'
       }
       hrefLang={locale}
       href={`${siteMetadata.siteUrl}${locale === router.defaultLocale ? '' : `/${locale}`}${
@@ -154,8 +154,8 @@ export const BlogSEO = ({
     images.length === 0
       ? [siteMetadata.socialBanner]
       : typeof images === 'string'
-        ? [images]
-        : images
+      ? [images]
+      : images
 
   const featuredImages = imagesArr.map((img) => {
     return {
