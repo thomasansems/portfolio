@@ -68,6 +68,14 @@ module.exports = nextTranslate(
         },
       ]
     },
+    async rewrites() {
+      return [
+        {
+          source: '/blog/:slug*.md',
+          destination: '/api/blog/:slug*',
+        },
+      ]
+    },
     webpack: (config, { dev, isServer }) => {
       config.module.rules.push({
         test: /\.svg$/,

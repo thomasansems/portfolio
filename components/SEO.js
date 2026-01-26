@@ -239,6 +239,13 @@ export const BlogSEO = ({
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         {availableLocales && generateLinks(router, availableLocales)}
+        {/* Markdown auto-discovery for AI crawlers (Third Audience) */}
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href={`${url}.md`}
+          title="Markdown version"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
