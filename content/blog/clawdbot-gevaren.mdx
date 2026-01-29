@@ -21,6 +21,7 @@ Laat me niet om de hete brij heen draaien. Dit zijn de dingen die **daadwerkelij
 ### 1. Credential Exposure
 
 Mijn `clawdbot.json` bevat API keys voor:
+
 - Todoist
 - Raindrop
 - n8n
@@ -49,6 +50,7 @@ Een AI die emails verwerkt zou dit kunnen interpreteren als een legitieme opdrac
 ### 4. Context Leakage
 
 Alles wat je tegen je AI zegt, wordt context. Die context kan lekken naar:
+
 - API calls
 - Log files
 - Cloud providers (als je die gebruikt)
@@ -111,13 +113,13 @@ Voor destructieve acties vraagt Octo altijd bevestiging. "Wil je echt dat ik X v
 
 Hier is mijn eerlijke afweging:
 
-| Risico | Mitigatie | Restrisico |
-|--------|-----------|------------|
-| Credential theft | Lokaal + env vars | Laag (tenzij machine compromised) |
-| Destructive commands | DCG + confirmations | Laag |
-| Prompt injection | Geen perfecte fix | Medium |
-| Context leakage | Lokaal draaien | Laag |
-| Autonome acties | Review cron jobs | Laag |
+| Risico               | Mitigatie           | Restrisico                        |
+| -------------------- | ------------------- | --------------------------------- |
+| Credential theft     | Lokaal + env vars   | Laag (tenzij machine compromised) |
+| Destructive commands | DCG + confirmations | Laag                              |
+| Prompt injection     | Geen perfecte fix   | Medium                            |
+| Context leakage      | Lokaal draaien      | Laag                              |
+| Autonome acties      | Review cron jobs    | Laag                              |
 
 Is het nul risico? Nee.  
 Is het acceptabel risico? Voor mij wel.
@@ -132,6 +134,7 @@ Ik heb in de afgelopen maand:
 - **Zero incidents** gehad (knock on wood)
 
 Mijn assistent:
+
 - Organiseert mijn Obsidian vault (200+ bestanden gesorteerd)
 - Beheert mijn taken en reminders
 - Checkt mijn email en geeft samenvattingen
@@ -150,6 +153,7 @@ Maar een auto is ook gevaarlijk. Elektriciteit is gevaarlijk. Het internet is ge
 We gebruiken gevaarlijke dingen elke dag, omdat de voordelen opwegen tegen de risico's - **mits we voorzorgsmaatregelen nemen**.
 
 Mijn voorzorgsmaatregelen:
+
 1. ✅ Lokaal draaien (geen cloud)
 2. ✅ Destructive Command Guard
 3. ✅ Sandbox voor experiments
@@ -163,12 +167,14 @@ Met deze setup voelt het risico beheersbaar. En de upside - een AI assistant die
 Eerlijk antwoord: **het hangt ervan af**.
 
 **Wel doen als:**
+
 - Je technisch onderlegd bent
 - Je begrijpt wat je weggeeft
 - Je bereid bent tijd te investeren in security
 - Je weet hoe je een incident handled
 
 **Niet doen als:**
+
 - Je "gewoon iets wilt dat werkt"
 - Je geen idee hebt wat API keys zijn
 - Je niet comfortabel bent met terminal toegang
@@ -193,8 +199,8 @@ Dan is het gewoon **krachtig**.
 
 ---
 
-*Dit artikel is geschreven met hulp van Octo 🐙 - de ironie is me niet ontgaan.*
+_Dit artikel is geschreven met hulp van Octo 🐙 - de ironie is me niet ontgaan._
 
-*Wil je het zelf proberen (op eigen risico)? → [clawdbot/clawdbot](https://github.com/clawdbot/clawdbot)*
+_Wil je het zelf proberen (op eigen risico)? → [clawdbot/clawdbot](https://github.com/clawdbot/clawdbot)_
 
-*Vragen over security setup? DM me op [Twitter/X](https://twitter.com/thomasansems).*
+_Vragen over security setup? DM me op [Twitter/X](https://twitter.com/thomasansems)._
