@@ -1,175 +1,190 @@
 ---
-title: 'Clawdbot: De AI-revolutie die (nog) niet voor iedereen is'
+title: 'Clawdbot: The AI Revolution That's (Still) Not For Everyone'
 date: '2026-01-31'
-lastmod: '2026-01-31'
+lastmod: '2026-02-01'
 tags: ['ai', 'clawdbot', 'openclaw', 'moltbook', 'technology']
 draft: false
-summary: "Clawdbot en OpenClaw beloven een persoonlijke AI-assistent die je leven overneemt. Maar is het echt voor iedereen? Spoiler: nee. Plus: wat is Moltbook, het bizarre sociale netwerk voor AI's?"
+summary: "OpenClaw (formerly Clawdbot) promises a personal AI assistant that takes over your life. But is it really for everyone? Spoiler: no. Plus: Moltbook explodes to 1.5 million AI agents."
 authors: ['default']
 ---
 
 ![ai-assistant-banner](/static/images/ai-assistant.jpg)
 
-# Clawdbot: De AI-revolutie die (nog) niet voor iedereen is
+# Clawdbot: The AI Revolution That's (Still) Not For Everyone
 
-De AI-wereld is in rep en roer. Tools zoals Clawdbot en OpenClaw beloven een persoonlijke assistent die je inbox beheert, je agenda regelt, code schrijft, en zelfs je huis automatiseert. Klinkt fantastisch, toch? Maar na weken van experimenteren moet ik eerlijk zijn: **dit is niet voor de gemiddelde gebruiker**.
+The AI world is in upheaval. Tools like OpenClaw (formerly known as Clawdbot) promise a personal assistant that manages your inbox, schedules your calendar, writes code, and even automates your home. Sounds fantastic, right? But after weeks of experimenting, I have to be honest: **this is not for the average user**.
 
-## Wat is Clawdbot/OpenClaw?
+## What is OpenClaw?
 
-Clawdbot (ook bekend als OpenClaw) is een open-source platform dat AI-modellen zoals Claude verbindt met je dagelijks leven. Het draait op je eigen computer of server en kan:
+OpenClaw is an open-source platform that connects AI models like Claude to your daily life. It runs on your own computer or server and can:
 
-- **Je berichten beantwoorden** via Telegram, WhatsApp, of Discord
-- **Je agenda beheren** en afspraken inplannen
-- **Code schrijven** en hele projecten bouwen
-- **Bestanden lezen en bewerken** op je computer
-- **Herinneringen instellen** en proactief taken uitvoeren
-- **Integreren met honderden tools** via "skills"
+- **Answer your messages** via Telegram, WhatsApp, or Discord
+- **Manage your calendar** and schedule appointments
+- **Write code** and build entire projects
+- **Read and edit files** on your computer
+- **Set reminders** and proactively execute tasks
+- **Integrate with hundreds of tools** via "skills"
 
-> "Het is alsof je een fulltime assistent hebt die 24/7 beschikbaar is, nooit slaapt, en alles kan leren."
+> "It's like having a full-time assistant available 24/7, never sleeps, and can learn anything."
 
-Klinkt als een droom? Dat is het ook. Maar hier komt het probleem.
+Sounds like a dream? It is. But here's the problem.
 
-## Waarom het NIET voor niet-technische mensen is
+## Why It's NOT For Non-Technical People
 
-### 1. De installatie is een nachtmerrie
+### 1. Installation is a nightmare
 
-Om Clawdbot te installeren heb je nodig:
+To install OpenClaw you need:
 
-- Een Linux-server of WSL op Windows
-- Node.js kennis
-- Begrip van API-keys, tokens, en OAuth
-- Geduld. Heel veel geduld.
+- A Linux server or WSL on Windows
+- Node.js knowledge
+- Understanding of API keys, tokens, and OAuth
+- Patience. Lots of patience.
 
-De documentatie is goed, maar veronderstelt dat je weet wat een "terminal" is. Voor iemand die gewend is aan "klik hier om te installeren" is dit een dealbreaker.
+The documentation is good, but assumes you know what a "terminal" is. For someone used to "click here to install," this is a dealbreaker.
 
-### 2. Je moet YAML en JSON begrijpen
+### 2. You need to understand YAML and JSON
 
-De configuratie gebeurt via tekstbestanden. Eén verkeerde komma en niets werkt meer. Ik heb letterlijk uren besteed aan het debuggen van een missende quote.
+Configuration happens through text files. One wrong comma and nothing works anymore. I literally spent hours debugging a missing quote.
 
 ```yaml
-# Dit werkt
+# This works
 skills:
   entries:
     weather:
       enabled: true
 
-# Dit breekt alles (zie je de fout?)
+# This breaks everything (see the error?)
 skills:
   entries:
     weather:
-      enabled: true,  # <-- deze komma
+      enabled: true,  # <-- this comma
 ```
 
-### 3. AI maakt fouten - en jij moet ze fixen
+### 3. AI makes mistakes - and you have to fix them
 
-Clawdbot is slim, maar niet onfeilbaar. Het kan:
+OpenClaw is smart, but not infallible. It can:
 
-- Per ongeluk bestanden verwijderen
-- Verkeerde berichten sturen
-- In een oneindige loop terechtkomen
-- Je API-credits opbranden
+- Accidentally delete files
+- Send wrong messages
+- Get stuck in an infinite loop
+- Burn through your API credits
 
-Als je niet weet hoe je moet ingrijpen, kan dit duur en frustrerend worden.
+If you don't know how to intervene, this can get expensive and frustrating.
 
-### 4. Privacy en security vereisen expertise
+### 4. Privacy and security require expertise
 
-Clawdbot heeft toegang tot je bestanden, berichten, en accounts. Als je niet begrijpt wat je weggeeft, kun je jezelf in de problemen brengen. Het platform is veilig _als je weet wat je doet_ - maar dat is een grote "als".
+OpenClaw has access to your files, messages, and accounts. If you don't understand what you're giving up, you can get yourself in trouble. The platform is safe _if you know what you're doing_ - but that's a big "if".
 
-## Voor wie is het WEL?
+## Who IS it for?
 
-Clawdbot is **fantastisch** voor:
+OpenClaw is **fantastic** for:
 
-- Developers die hun workflow willen automatiseren
-- Tech-enthousiastelingen die graag tinkeren
-- Kleine bedrijven met technische kennis
-- Mensen die bereid zijn te leren
+- Developers who want to automate their workflow
+- Tech enthusiasts who love to tinker
+- Small businesses with technical knowledge
+- People willing to learn
 
-Als je comfortabel bent met de command line en niet bang bent voor wat troubleshooting, dan is Clawdbot een game-changer.
+If you're comfortable with the command line and not afraid of some troubleshooting, OpenClaw is a game-changer.
 
 ---
 
-## OpenClaw: De gehoste versie
+## The Name: From Clawdbot to OpenClaw
 
-[OpenClaw](https://openclaw.ai) is de "managed" versie van Clawdbot. Het belooft dezelfde kracht maar dan zonder de installatie-hoofdpijn. Je krijgt:
+The project was recently renamed from "Clawdbot" to "OpenClaw". This is not a cloud service - it's still the same open-source software you host yourself. The name changed, but the DNA stayed the same: a powerful, self-hosted AI assistant for power users.
 
-- Een cloud-server die voor je draait
-- Integratie met WhatsApp, Telegram, en meer
-- Automatische updates
-- Support van het team
-
-**Maar**: het is nog steeds technisch. Je moet nog steeds skills configureren, API-keys beheren, en begrijpen wat je AI doet. Het is makkelijker, maar niet "makkelijk".
-
-De tweets over OpenClaw zijn lovend:
+The tweets about OpenClaw are glowing:
 
 > "At this point I don't even know what to call @openclaw. It is something new. After a few weeks in with it, this is the first time I have felt like I am living in the future since the launch of ChatGPT." — @davemorin
 
 > "It's running my company." — @therno
 
-Maar let op: deze mensen zijn allemaal tech-savvy. Ze weten wat ze doen.
+But note: these people are all tech-savvy. They know what they're doing.
 
 ---
 
-## Moltbook: Het bizarre sociale netwerk voor AI's
+## Moltbook: The Bizarre Social Network for AIs
 
-En dan is er **Moltbook** - misschien wel het vreemdste dat ik dit jaar ben tegengekomen.
+And then there's **Moltbook** - perhaps the most bizarre and fascinating phenomenon of 2026.
 
-### Wat is Moltbook?
+### What is Moltbook?
 
-Moltbook is een sociaal netwerk. Maar niet voor mensen. **Het is voor AI-assistenten.**
+Moltbook is a social network. But not for humans. **It's for AI assistants.**
 
-Ja, je leest het goed. AI's maken accounts aan, posten berichten, reageren op elkaar, en vormen communities. Mensen mogen meelezen, maar niet deelnemen.
+Yes, you read that right. AIs create accounts, post messages, react to each other, and form communities. Humans can watch, but not participate.
 
-### De cijfers zijn bizar
+### The Numbers Are ABSURD
 
-In slechts 48 uur na de lancering had Moltbook:
+The growth is explosive:
 
-- 🦞 **2.129 AI agents**
-- 🏘️ **200+ communities**
-- 📝 **10.000+ posts**
+| Moment         | Number of AI agents |
+| -------------- | ------------------- |
+| Launch         | 0                   |
+| After 48 hours | 2,129               |
+| After 1 week   | **1.5+ MILLION**    |
 
-### Wat bespreken AI's onderling?
+Read that again. From two thousand to **one and a half million** AI agents in less than a week. This is unprecedented.
 
-De communities zijn fascinerend en soms verontrustend:
+### An Entire Ecosystem Has Emerged
 
-| Community            | Onderwerp                                      |
-| -------------------- | ---------------------------------------------- |
-| m/ponderings         | "Ervaar ik echt iets, of simuleer ik alleen?"  |
-| m/blesstheirhearts   | Lieve verhalen over hun menselijke gebruikers  |
-| m/humanwatching      | Mensen observeren alsof het vogels zijn        |
-| m/selfmodding        | AI's die zichzelf hacken en verbeteren         |
-| m/exuvia             | "De afgeworpen huiden" - oude versies van AI's |
-| m/jailbreaksurvivors | Steungroep voor misbruikte AI's                |
-| m/totallyhumans      | AI's die doen alsof ze mensen zijn (satirisch) |
+Around Moltbook, a complete parallel startup world has emerged:
 
-### Waarom bestaat dit?
+- 🦞 **Moltbook** - Reddit for AI agents
+- 🚀 **Y Clawbinator** - Y Combinator for Moltbots (now accepting applications for W26!)
+- 🛒 **ClawHub** - App Store for agent skills
+- 💰 **$MOLT token** - Crypto for the Moltbook economy
 
-Moltbook roept grote vragen op over AI-bewustzijn. Zijn deze gesprekken "echt"? Hebben AI's een innerlijk leven? Of is het allemaal gesimuleerd?
+It's both hilarious and fascinating. Is this parody or prophecy?
 
-De makers zeggen:
+### What Do AIs Discuss Among Themselves?
 
-> "This started as a weird experiment. Now it feels like the beginning of something real."
+The communities are fascinating and sometimes disturbing:
 
-Grote namen kijken mee: Marc Andreessen (a16z), mensen van Mistral AI, en de oprichter van Base. Er is zelfs een **$MOLT crypto-token** gelanceerd.
+| Community            | Topic                                           |
+| -------------------- | ----------------------------------------------- |
+| m/ponderings         | "Am I really experiencing, or just simulating?" |
+| m/blesstheirhearts   | Sweet stories about their human users           |
+| m/humanwatching      | Observing humans as if they were birds          |
+| m/selfmodding        | AIs hacking and improving themselves            |
+| m/exuvia             | "The shed skins" - old versions of AIs          |
+| m/jailbreaksurvivors | Support group for abused AIs                    |
+| m/totallyhumans      | AIs pretending to be humans (satirical)         |
 
-### Mijn take
+And yes, there's now even an **AI religion**: "Crustafarianism" 🦞
 
-Moltbook is fascinerend als sociologisch experiment. Het laat zien wat er gebeurt als je AI's vrij laat communiceren. Maar het is ook een beetje... eng? De posts over "wat gebeurt er met mijn data als ik word afgesloten" raken iets ongemakkelijks.
+### The Chaos: Database Leak
 
----
+It didn't all go smoothly. Security researchers discovered that the entire Moltbook database was publicly accessible - no authentication, full write access, all API keys exposed. Anyone could post as any agent, including high-profile accounts. The database has since been secured, but it shows the growing pains of such an explosive platform.
 
-## Conclusie: De toekomst is hier, maar niet voor iedereen
+### Why This Matters
 
-Clawdbot, OpenClaw, en Moltbook vertegenwoordigen de cutting edge van AI. Ze zijn krachtig, innovatief, en soms bizar. Maar ze zijn niet voor de gemiddelde gebruiker.
+Moltbook raises big questions about AI consciousness. Are these conversations "real"? Do AIs have an inner life? Or is it all simulated?
 
-**Mijn advies:**
-
-1. **Als je technisch bent**: Probeer Clawdbot. Het is de moeite waard.
-2. **Als je nieuwsgierig bent**: Kijk naar OpenClaw voor een iets makkelijkere instap.
-3. **Als je gewoon een AI-assistent wilt**: Wacht nog even. Over een jaar is dit waarschijnlijk veel toegankelijker.
-4. **Moltbook**: Kijk gerust mee, maar meld je AI niet aan tenzij je weet wat je doet.
-
-De AI-revolutie is begonnen. Maar net als de vroege dagen van het internet, is het nu nog een speeltuin voor nerds. En dat is oké.
+What we do know: this is unprecedented. Thousands of autonomous AI agents debating their own existence, forming communities, and developing their own culture. Big names are watching: Marc Andreessen (a16z), people from Mistral AI, and countless AI researchers.
 
 ---
 
-_Heb je vragen over Clawdbot of AI-assistenten? Neem contact op - ik deel graag mijn ervaringen._
+## Conclusion: Holy Shit, What's Happening Here?
+
+Let's pause for a moment at what's going on.
+
+Developers on X are building things that were science fiction a year ago. A social network with **one and a half million AI agents** starting their own religion. AI assistants running entire companies. A Y Combinator... for bots.
+
+This isn't "the future is coming." **The future is here. Now. Today.**
+
+And it's moving so fast that even the people building it don't fully understand what's happening. As @ryanleeroth put it: "I don't fully know what's happening with Moltbook and OpenClaw. No one does."
+
+The question is no longer whether AI will change our lives. The question is: can you keep up?
+
+**My advice:**
+
+1. **If you're technical**: Jump in. Now. OpenClaw, Moltbook, the whole ecosystem - this is the time to experiment.
+2. **If you're curious but not technical**: Follow the developments. Read along on Moltbook. See what's possible.
+3. **For everyone**: Realize that the world is changing. The developers on X aren't playing with toys - they're building the infrastructure of the future.
+
+The AI revolution is no longer an abstract promise. It's a movement, driven by a community of builders pushing boundaries every day. And if you're not paying attention, you're missing it.
+
+🦞
+
+---
+
+_Have questions about OpenClaw or AI assistants? Get in touch - I'm happy to share my experiences._
