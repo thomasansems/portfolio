@@ -3,8 +3,8 @@ const siteMetadata = {
   author: 'Thomas Ansems',
   headerTitle: { en: 'EN Thomas', nl: 'NL Thomas' },
   description: {
-    en: 'My personal programming experience blog',
-    nl: 'Development ervaringen en blog',
+    en: 'Full-stack engineer building AI-powered platforms. Currently developing HeySummon — Human in the Loop as a Service.',
+    nl: 'Full-stack engineer die AI-powered platforms bouwt. Momenteel bezig met HeySummon — Human in the Loop as a Service.',
   },
   language: 'en-us',
   theme: 'system', // system, dark or light
