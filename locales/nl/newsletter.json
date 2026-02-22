@@ -1,0 +1,9 @@
+{
+  "title": "Schrijf je in voor de nieuwsbrief",
+  "description": "Ontvang updates over nieuwe projecten en blogposts.",
+  "email": "Je e-mailadres",
+  "action": "Inschrijven",
+  "success": "Succesvol ingeschreven!",
+  "already": "Je bent al ingeschreven.",
+  "error": "Er is een fout opgetreden. Probeer het later opnieuw."
+}

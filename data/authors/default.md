@@ -1,16 +1,15 @@
 ---
-name: Tails Azimuth
+name: Thomas Ansems
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Full-stack Engineer & Platform Builder
+company: BMW Group
+email: thomas@thomasansems.nl
+linkedin: https://www.linkedin.com/in/thomasansems
+github: https://github.com/thomasansems
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Full-stack engineer since 2012 with a passion for building scalable, user-friendly platforms. Currently working at BMW Group while building [HeySummon](https://www.heysummon.ai) — an open-source Human in the Loop platform that connects AI agents with human experts.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+I specialize in TypeScript, React, Next.js, and real-time architectures. My focus has shifted towards AI agent infrastructure, security-first design, and building tools that make AI more reliable by keeping humans in the loop.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Based in the Netherlands. Building the bridge between AI automation and human expertise.

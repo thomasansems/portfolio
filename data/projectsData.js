@@ -1,38 +1,30 @@
 const projectsData = {
   en: [
     {
-      title: 'A Search Engine',
-      description: `What if you could look up any information in the world? Webpages, images, videos
-      and more. Google has many features to help you find exactly what you're looking
-      for.`,
-      imgSrc: '/static/images/google.png',
-      href: 'https://www.google.com',
+      title: '🦞 HeySummon',
+      description: `Human in the Loop as a Service — an open-source platform that connects AI agents with human experts via real-time SSE streams. Features three-factor API authentication, content safety guard sidecar, and a zero-knowledge architecture. Currently in development.`,
+      imgSrc: '/static/images/heysummon.png',
+      href: 'https://www.heysummon.ai',
     },
     {
-      title: 'The Time Machine',
-      description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-      to the desired date and press "Go". No more worrying about lost keys or
-      forgotten handphones with this simple yet affordable solution.`,
-      imgSrc: '/static/images/time-machine.jpg',
-      href: '/blog/the-time-machine',
+      title: '🏠 HomeDecorStyling',
+      description: `AI-powered interior design app that helps parents style children's rooms. Upload a photo, describe your vision, and get personalized styling suggestions with product recommendations.`,
+      imgSrc: '/static/images/homedecorstyling.png',
+      href: '#',
     },
   ],
-  fr: [
+  nl: [
     {
-      title: 'Un moteur de recherche',
-      description: `Et si vous pouviez rechercher n'importe quelle information dans le monde ? Pages web, images, vidéos
-      et bien d'autres choses encore. Google propose de nombreuses fonctionnalités pour vous aider à trouver exactement ce que vous recherchez.
-      pour.`,
-      imgSrc: '/static/images/google.png',
-      href: 'https://www.google.com',
+      title: '🦞 HeySummon',
+      description: `Human in the Loop as a Service — een open-source platform dat AI agents verbindt met menselijke experts via real-time SSE streams. Met drie-factor API authenticatie, content safety guard sidecar en een zero-knowledge architectuur. Momenteel in ontwikkeling.`,
+      imgSrc: '/static/images/heysummon.png',
+      href: 'https://www.heysummon.ai',
     },
     {
-      title: 'La machine à remonter le temps',
-      description: `Imaginez que vous puissiez voyager dans le passé ou dans le futur. Il suffit de tourner le bouton
-      sur la date souhaitée et d'appuyer sur "Go". Plus besoin de se soucier des clés perdues ou des téléphones portables oubliés avec cette solution simple et abordable.
-      ou de téléphones portables oubliés grâce à cette solution simple et abordable.`,
-      imgSrc: '/static/images/time-machine.jpg',
-      href: '/blog/the-time-machine',
+      title: '🏠 HomeDecorStyling',
+      description: `AI-powered interieur design app die ouders helpt bij het stylen van kinderkamers. Upload een foto, beschrijf je visie en krijg gepersonaliseerde styling suggesties met productaanbevelingen.`,
+      imgSrc: '/static/images/homedecorstyling.png',
+      href: '#',
     },
   ],
 }
