@@ -12,9 +12,7 @@ import { useRouter } from 'next/router'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+  `https://x.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/blog/${slug}`)}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -59,7 +57,7 @@ export default function PostLayout({
             className="xl:grid xl:grid-cols-4 xl:gap-x-6"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:pt-11">
+            <dl className="pb-10 pt-6 xl:pt-11">
               <dt className="sr-only">{t('common:authors')}</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
@@ -84,7 +82,7 @@ export default function PostLayout({
                               href={author.twitter}
                               className="text-primary-600 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-400"
                             >
-                              {author.twitter.replace('https://twitter.com/', '@')}
+                              {author.twitter.replace('https://x.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -95,10 +93,11 @@ export default function PostLayout({
               </dd>
             </dl>
             <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 prose-h1:mt-4 dark:prose-dark">
+              {/* prettier-ignore */}
+              <div className="prose max-w-none pb-8 pt-10 prose-h1:mt-4 dark:prose-dark">
                 {children}
               </div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+              <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(slug)} rel="nofollow">
                   {t('common:twitter')}
                 </Link>

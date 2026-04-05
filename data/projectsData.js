@@ -1,6 +1,14 @@
 const projectsData = {
   en: [
     {
+      title: 'heysummon.ai',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'SSE', 'Docker', 'AI Agents'],
+      description: `An open-source platform that connects AI agents with human experts in real-time. When an AI gets stuck, it summons a human — securely, with three-factor authentication, a stateless content safety guard, and encrypted storage. Currently in development.`,
+      imgSrc: '/static/images/heysummon.jpg',
+      href: 'https://www.heysummon.ai',
+      moreInfoText: 'Visit heysummon.ai',
+    },
+    {
       title: 'Live chat with BMW Group',
       tags: ['React', 'Typescript', 'NodeJS', 'Websocket', 'A11y'],
       description: `Developed the live chat widget for BMW Group, used globally to assist customers quickly and effectively. Also built the internal widget management tool, implemented accessibility improvements, and optimized the user experience across platforms.`,
@@ -58,6 +66,14 @@ const projectsData = {
     },
   ],
   nl: [
+    {
+      title: 'heysummon.ai',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'SSE', 'Docker', 'AI Agents'],
+      description: `Een open-source platform dat AI agents verbindt met menselijke experts in real-time. Wanneer een AI vastloopt, roept het een mens op — veilig, met drie-factor authenticatie, een stateless content safety guard en versleutelde opslag. Momenteel in ontwikkeling.`,
+      imgSrc: '/static/images/heysummon.jpg',
+      href: 'https://www.heysummon.ai',
+      moreInfoText: 'Bekijk heysummon.ai',
+    },
     {
       title: 'Live chat voor BMW Group',
       tags: ['React', 'Typescript', 'NodeJS', 'Websocket', 'A11y'],
