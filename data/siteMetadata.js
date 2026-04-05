@@ -3,8 +3,8 @@ const siteMetadata = {
   author: 'Thomas Ansems',
   headerTitle: { en: 'EN Thomas', nl: 'NL Thomas' },
   description: {
-    en: 'Full-stack engineer building AI-powered platforms. Currently developing HeySummon — Human in the Loop as a Service.',
-    nl: 'Full-stack engineer die AI-powered platforms bouwt. Momenteel bezig met HeySummon — Human in the Loop as a Service.',
+    en: 'Full-stack engineer building AI-powered platforms. Currently developing heysummon.ai — The self-hosted, encrypted human-in-the-loop API',
+    nl: 'Full-stack engineer die AI-powered platforms bouwt. Momenteel bezig met heysummon.ai — The self-hosted, encrypted human-in-the-loop API',
   },
   language: 'en-us',
   theme: 'system', // system, dark or light

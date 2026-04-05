@@ -1,7 +1,7 @@
 const projectsData = {
   en: [
     {
-      title: '🦞 HeySummon — Human in the Loop as a Service',
+      title: 'heysummon.ai',
       tags: ['Next.js', 'TypeScript', 'Prisma', 'SSE', 'Docker', 'AI Agents'],
       description: `An open-source platform that connects AI agents with human experts in real-time. When an AI gets stuck, it summons a human — securely, with three-factor authentication, a stateless content safety guard, and encrypted storage. Currently in development.`,
       imgSrc: '/static/images/heysummon.jpg',
@@ -67,7 +67,7 @@ const projectsData = {
   ],
   nl: [
     {
-      title: '🦞 HeySummon — Human in the Loop as a Service',
+      title: 'heysummon.ai',
       tags: ['Next.js', 'TypeScript', 'Prisma', 'SSE', 'Docker', 'AI Agents'],
       description: `Een open-source platform dat AI agents verbindt met menselijke experts in real-time. Wanneer een AI vastloopt, roept het een mens op — veilig, met drie-factor authenticatie, een stateless content safety guard en versleutelde opslag. Momenteel in ontwikkeling.`,
       imgSrc: '/static/images/heysummon.jpg',

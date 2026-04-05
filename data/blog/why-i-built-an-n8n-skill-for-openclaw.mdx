@@ -1,0 +1,114 @@
+---
+title: 'Why I Built an n8n Skill for OpenClaw (And Why You Should Care)'
+date: '2026-03-15'
+tags: ['AI', 'n8n', 'openclaw', 'automation', 'open-source']
+draft: false
+summary: 'OpenClaw is powerful but credential management is sketchy. So I built a skill that lets AI agents manage n8n workflows via API — bypassing the paid AI Workflow Builder in the process.'
+images: []
+authors: ['default']
+---
+
+# Why I Built an n8n Skill for OpenClaw (And Why You Should Care)
+
+**15,000+ downloads.** That's how many times people have installed my n8n skill on OpenClaw. And honestly? I built it because I didn't trust OpenClaw with my credentials.
+
+Let me explain.
+
+## The Problem: OpenClaw's Credential Management Is Sketchy
+
+OpenClaw is an incredible platform for AI agents. I use it daily. But here's the thing nobody talks about: **how does it handle your API keys and credentials?**
+
+When you connect services through OpenClaw skills, your credentials live in an environment that's still maturing. The security model is improving, but "improving" is not the same as "battle-tested." We're talking about API keys that can access your email, your infrastructure, your production systems.
+
+> I don't want my production credentials floating around in a platform that's still figuring out its security story.
+
+That's not a knock on OpenClaw — it's just reality. It's a young platform. And young platforms make trade-offs.
+
+## The Solution: Let n8n Handle the Dangerous Stuff
+
+Here's what I figured: **n8n is already a trusted platform for managing credentials and running automations.** It's been around for years, it's battle-tested, it has proper credential encryption, and — most importantly — you can self-host it.
+
+So instead of giving OpenClaw direct access to all my services, I built a skill that talks to n8n's API. The architecture is simple:
+
+- **OpenClaw agent** → talks to n8n via API (one credential: `N8N_API_KEY`)
+- **n8n** → manages all the actual service credentials (Gmail, Slack, databases, webhooks, everything)
+- **Webhooks** → n8n handles the actual HTTP calls to external services
+
+This way, my OpenClaw agent only needs **one API key** — the n8n key. All the sensitive credentials stay inside n8n, where they belong. n8n encrypts them, manages rotation, and handles the actual connections.
+
+**One key to rule them all.** Instead of 15 credentials scattered across OpenClaw skills.
+
+## The Bonus: Bypassing n8n's Paid AI Workflow Builder
+
+Here's where it gets really interesting.
+
+A few months ago, n8n introduced their [AI Workflow Builder](https://docs.n8n.io/advanced-ai/ai-workflow-builder/) — a feature that lets you describe a workflow in plain English and n8n generates it for you. Cool concept. But it runs on a **credit system tied to their paid plans.** Every message you send to the builder costs one credit.
+
+Now look at what my skill does:
+
+| **Feature**              | **n8n AI Workflow Builder** | **OpenClaw + n8n Skill** |
+| ------------------------ | --------------------------- | ------------------------ |
+| **Create workflows**     | ✅ Yes                      | ✅ Yes                   |
+| **Modify workflows**     | ✅ Yes                      | ✅ Yes                   |
+| **Activate/deactivate**  | ❌ Manual                   | ✅ Via API               |
+| **Debug executions**     | ❌ Manual                   | ✅ Check status & logs   |
+| **Test workflows**       | ❌ Manual                   | ✅ Dry-run & validation  |
+| **Performance analysis** | ❌ No                       | ✅ Bottleneck detection  |
+| **Cost**                 | 💰 Paid credits             | 🆓 Free (MIT-0 license)  |
+
+You're essentially getting the same workflow generation capability — and more — through your own OpenClaw agent. Your agent can create workflows, adjust them, trigger them, check execution results, and even optimize performance. All through the n8n API.
+
+**You're not paying for credits. You're not locked into a plan. You're using your own AI agent to do the same thing.**
+
+## What the Skill Actually Does
+
+Version 2.0.0 ships with three modules:
+
+### 🔧 n8n_api.py — The Core
+
+The API client for everything: list workflows, create new ones, activate/deactivate, trigger executions, check status, and pull statistics. This is the backbone.
+
+### 🧪 n8n_tester.py — Quality Assurance
+
+Structure validation, dry-run testing, and test suites. Before you push a workflow to production, let the agent validate it. No more "works on my machine" surprises.
+
+### ⚡ n8n_optimizer.py — Performance
+
+Bottleneck detection, optimization suggestions, and performance scoring. Your agent can tell you _why_ a workflow is slow and _how_ to fix it.
+
+## Security: Verified Clean
+
+Both VirusTotal and OpenClaw's security scans mark the skill as **benign**. No hidden endpoints, no data exfiltration, no phone-home behavior. It's MIT-0 licensed — meaning you can use, modify, and redistribute it without even mentioning my name.
+
+The skill makes API calls to your n8n instance and nothing else. You control the endpoint, you control the API key, you control the data.
+
+## Real-World Use Cases
+
+Here's how I actually use it:
+
+1. **"Create a workflow that monitors my website uptime and sends a Slack alert if it goes down"** → Agent creates the workflow in n8n, activates it, done
+2. **"Why did my invoice workflow fail last night?"** → Agent checks execution logs, identifies the error, suggests a fix
+3. **"Optimize my data processing pipeline"** → Agent runs performance analysis, finds the bottleneck, adjusts the workflow
+4. **"Deactivate all staging workflows"** → Agent lists workflows by tag, deactivates them in bulk
+
+Things that would take me 15-30 minutes of clicking through the n8n UI — done in seconds through a chat message.
+
+## The Bigger Picture
+
+This is what I love about the OpenClaw ecosystem: you can build tools that make AI agents _actually useful_ in your existing infrastructure. Not as a replacement for n8n, but as an **intelligent layer on top of it.**
+
+n8n handles what it's good at: credential management, webhook handling, reliable execution. Your AI agent handles what it's good at: understanding intent, making decisions, and orchestrating complex tasks.
+
+Best of both worlds.
+
+---
+
+**Try it yourself:**
+
+👉 [clawhub.ai/thomasansems/n8n](https://clawhub.ai/thomasansems/n8n) — 15,000+ downloads, security verified, MIT-0 license.
+
+Got questions or ideas for the skill? [Get in touch](/contact).
+
+---
+
+_Thomas Ansems is a full-stack developer building AI-powered platforms. Currently developing [HeySummon](https://www.heysummon.ai) — Human in the Loop as a Service. Follow along on [X](https://x.com/verderTHAN) or [GitHub](https://github.com/thomasansems)._

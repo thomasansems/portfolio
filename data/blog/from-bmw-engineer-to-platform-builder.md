@@ -1,9 +1,9 @@
 ---
-title: 'From BMW Engineer to Platform Builder'
+title: 'Starting an Open-Source Human in the Loop Project'
 date: '2026-02-22'
-tags: ['career', 'ai', 'heysummon', 'entrepreneurship']
+tags: ['career', 'ai', 'heysummon', 'open-source', 'entrepreneurship']
 draft: false
-summary: 'After 14 years of full-stack engineering — including building enterprise UIs at BMW — I am now building HeySummon, an open-source platform that keeps humans in the AI loop.'
+summary: 'Why I started building HeySummon — an open-source platform that keeps humans in the AI loop. The technical challenges, the stack, and why trust matters.'
 ---
 
 ## The Journey

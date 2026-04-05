@@ -1,9 +1,9 @@
 ---
-title: 'Van BMW Engineer naar Platform Builder'
+title: 'Een Open-Source Human in the Loop Project Starten'
 date: '2026-02-22'
-tags: ['career', 'ai', 'heysummon', 'entrepreneurship']
+tags: ['career', 'ai', 'heysummon', 'open-source', 'entrepreneurship']
 draft: false
-summary: 'Na 14 jaar full-stack engineering — waaronder enterprise UIs bij BMW — bouw ik nu HeySummon, een open-source platform dat mensen in de AI loop houdt.'
+summary: 'Waarom ik HeySummon ben gaan bouwen — een open-source platform dat mensen in de AI loop houdt. De technische uitdagingen, de stack en waarom vertrouwen belangrijk is.'
 ---
 
 ## De Reis
