@@ -125,7 +125,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </ContentItem>
 
-        {/* <ContentItem title2="Blog">
+        <ContentItem title2="Blog">
           <ul className="">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -172,7 +172,7 @@ export default function Home({ posts, locale, availableLocales }) {
               )
             })}
           </ul>
-        </ContentItem> */}
+        </ContentItem>
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">

@@ -24,6 +24,22 @@ const experimentsData = {
         link: 'https://experment-retro-sphere-etc.vercel.app/',
       },
     ],
+    2025: [
+      {
+        title: 'She never stopped dancing',
+        tools: ['Three.js', 'WebGL', 'GLSL', 'Art'],
+        imgSrc: '/static/images/dancemoves-2025.png',
+        link: 'https://dd-dancemoves.vercel.app/',
+      },
+    ],
+    2026: [
+      {
+        title: 'This year is an experiment itself',
+        tools: ['Life'],
+        imgSrc: '',
+        link: '#',
+      },
+    ],
   },
   nl: {
     2022: [
@@ -48,6 +64,22 @@ const experimentsData = {
         tools: ['Three.js', 'Typescript', 'Art'],
         imgSrc: '/static/images/retro-artpiece.png',
         link: 'https://experment-retro-sphere-etc.vercel.app/',
+      },
+    ],
+    2025: [
+      {
+        title: 'Ze is nooit gestopt met dansen',
+        tools: ['Three.js', 'WebGL', 'GLSL', 'Art'],
+        imgSrc: '/static/images/dancemoves-2025.png',
+        link: 'https://dd-dancemoves.vercel.app/',
+      },
+    ],
+    2026: [
+      {
+        title: 'Dit jaar is zelf een experiment',
+        tools: ['Life'],
+        imgSrc: '',
+        link: '#',
       },
     ],
   },
