@@ -26,7 +26,7 @@ const experimentsData = {
     ],
     2025: [
       {
-        title: 'She never stopped dancing',
+        title: 'He never stopped dancing',
         tools: ['Three.js', 'WebGL', 'GLSL', 'Art'],
         imgSrc: '/static/images/dancemoves-2025.png',
         link: 'https://dd-dancemoves.vercel.app/',
@@ -68,7 +68,7 @@ const experimentsData = {
     ],
     2025: [
       {
-        title: 'Ze is nooit gestopt met dansen',
+        title: 'Hij is nooit gestopt met dansen',
         tools: ['Three.js', 'WebGL', 'GLSL', 'Art'],
         imgSrc: '/static/images/dancemoves-2025.png',
         link: 'https://dd-dancemoves.vercel.app/',
