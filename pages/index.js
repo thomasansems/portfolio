@@ -91,18 +91,6 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </div>
 
-        <ContentItem>
-          <div className="flex justify-center">
-            <div className="grid max-w-3xl grid-cols-2 gap-4 pt-12 md:grid-cols-3">
-              {LOGOS.map((item, key) => (
-                <div key={key}>
-                  <Image src={item.logo} alt={item.title} width={678 / 2} height={322 / 2} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </ContentItem>
-
         <ContentItem title2="Blog">
           <ul className="">
             {!posts.length && 'No posts found.'}
@@ -150,6 +138,18 @@ export default function Home({ posts, locale, availableLocales }) {
               )
             })}
           </ul>
+        </ContentItem>
+
+        <ContentItem>
+          <div className="flex justify-center">
+            <div className="grid max-w-3xl grid-cols-2 gap-4 pt-12 md:grid-cols-4">
+              {LOGOS.map((item, key) => (
+                <div key={key}>
+                  <Image src={item.logo} alt={item.title} width={678 / 3} height={322 / 3} />
+                </div>
+              ))}
+            </div>
+          </div>
         </ContentItem>
       </div>
       {posts.length > MAX_DISPLAY && (
