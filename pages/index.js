@@ -91,7 +91,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         </div>
 
-        <ContentItem title2="Blog">
+        <ContentItem>
           <ul className="">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
