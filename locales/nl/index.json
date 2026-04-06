@@ -1,31 +1,7 @@
 {
   "intro": {
-    "title": "Hey, samen aan iets bouwen?",
-    "content": "Ik ben Thomas Ansems, een senior Full-stack developer en consultant met een passie voor code, kunst en strategie! Ik help klanten niet alleen met front-end uitdagingen, maar ook met het ontwikkelen van een robuuste digitale visie."
-  },
-  "do": {
-    "content": [
-      {
-        "title": "Full-stack Development",
-        "content": "Sinds 2012 werk ik als Full-stack developer. Ik maak graag gebruiksvriendelijke en schaalbare UI's en websites."
-      },
-      {
-        "title": "Full-stack Engineering",
-        "content": "Ik verbeter UX en performance door de nieuwste technologieën en frameworks toe te passen. Typescript is daarbij een belangrijk onderdeel van mijn workflow."
-      },
-      {
-        "title": "Javascript en Typescript Specialist",
-        "content": "Met ruime ervaring in Javascript en Typescript werk ik graag met tools zoals React, Next.js, Three.js en geavanceerde tooling voor complexe projecten."
-      },
-      {
-        "title": "Digitale Consultancy",
-        "content": "Ik werk samen met bedrijven en startups om strategie, UX, toegankelijkheid en architectuur te verbeteren."
-      },
-      {
-        "title": "What is next?",
-        "content": "Ik blijf experimenteren en mijn kennis uitbreiden. Momenteel richt ik me op AI-integratie, Web3-oplossingen en enterprise-level development."
-      }
-    ]
+    "title": "Als kind wilde ik architect worden.",
+    "content": "Nu doe ik mijn best om architect te worden van autonome workflows en AI-agents. Full circle? Ik schrijf geen code meer — ik ontwerp de systemen die dat doen."
   },
   "clients": {
     "title0": "Waarvoor ik gewerkt",

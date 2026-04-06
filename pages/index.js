@@ -76,8 +76,8 @@ export default function Home({ posts, locale, availableLocales }) {
                 src={meJpg}
                 alt="Thomas Ansems"
                 className="rounded-full"
-                width={180}
-                height={180}
+                width={140}
+                height={140}
               />
             </div>
             <div className="md:ml-5">
@@ -90,28 +90,6 @@ export default function Home({ posts, locale, availableLocales }) {
             </div>
           </div>
         </div>
-
-        <ContentItem>
-          <div className="mt-0 max-w-lg sm:mx-auto md:max-w-none">
-            <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
-              {Array.apply(null, Array(5)).map((item, key) => (
-                <div
-                  key={key}
-                  className="relative flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-start sm:justify-start md:flex-col lg:flex-row"
-                >
-                  <div className="text-center sm:min-w-0 sm:flex-1 sm:text-left">
-                    <p className="text-2xl font-semibold leading-8">
-                      {t(`index:do.content.${key}.title`)}
-                    </p>
-                    <p className="mt-2 text-base leading-7 text-gray-800 dark:text-gray-100">
-                      {t(`index:do.content.${key}.content`)}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </ContentItem>
 
         <ContentItem>
           <div className="flex justify-center">

@@ -1,33 +1,7 @@
 {
   "intro": {
-    "title": "Hi, lets build something together?",
-    "content": "Hey, I am a senior Full-stack developer and consultant with a passion for art, code, and strategy! I help clients not only with Full-stack challenges but also with developing a robust digital vision."
-  },
-  "do": {
-    "title0": "What do",
-    "title1": "I do?",
-    "content": [
-      {
-        "title": "Full-stack Development",
-        "content": "Since 2012, I have been working as a Full-stack developer. I enjoy creating user-friendly and scalable UIs and websites."
-      },
-      {
-        "title": "Full-stack Engineering",
-        "content": "I enhance UX and performance by applying the latest technologies and frameworks. Typescript is an essential part of my workflow."
-      },
-      {
-        "title": "JavaScript and TypeScript Specialist",
-        "content": "With extensive experience in JavaScript and TypeScript, I love working with tools like React, Next.js, Three.js, and advanced tooling for complex projects."
-      },
-      {
-        "title": "Digital Consultancy",
-        "content": "I collaborate with businesses and startups to improve strategy, UX, accessibility, and architecture."
-      },
-      {
-        "title": "What is next?",
-        "content": "I continuously experiment and expand my knowledge. Currently, I am focusing on AI integration, Web3 solutions, and enterprise-level development."
-      }
-    ]
+    "title": "As a kid I wanted to be an architect. ",
+    "content": "Now I do my best to become an architect of autonomous workflows and AI agents. Full circle? I don't write code anymore — I design the systems that do."
   },
   "clients": {
     "title0": "Who I have worked",
