@@ -1,0 +1,157 @@
+---
+title: 'Why My AIisajoke_v2 Development Harness Actually Works'
+date: '2026-05-22'
+tags: ['ai', 'automation', 'github', 'codex', 'openclaw']
+draft: false
+summary: 'My AIisajoke_v2 setup is not about maximum autonomy. It is about controlled throughput: own your subscriptions, collaborate in GitHub, spread work over time with crons, and validate everything through repeatable workflows.'
+images: []
+authors: ['default']
+---
+
+# Why My AIisajoke_v2 Development Harness Actually Works
+
+There are plenty of AI coding demos that look impressive for five minutes and become unmaintainable a week later.
+
+That was exactly the thing I wanted to avoid with **AIisajoke_v2**.
+
+So instead of building one giant "autonomous dev agent", I built a **development harness** around it. A harness is a better word than "agent" here, because the value is not just in generation. The value is in the rails around it:
+
+- I keep control over which subscriptions I pay for
+- the team works through GitHub instead of vague chat history
+- cronjobs spread the work out over time instead of starting everything at once
+- validation happens through predictable workflows before something is treated as ready
+
+That combination makes the setup feel a lot better in practice than the average all-in-one AI platform.
+
+## The Goal Was Never "Maximum Autonomy"
+
+The temptation with AI development is obvious: let one tool do everything end to end.
+
+In practice, that usually creates a brittle mess:
+
+- one vendor wants to own prompting, execution, storage and deployment
+- your costs get bundled into subscriptions you do not fully control
+- every failure ends up hidden inside one opaque interface
+- collaboration gets harder because the real state lives outside GitHub
+
+I wanted the opposite.
+
+I wanted a setup where AI helps aggressively, but the system still behaves like a professional software workflow.
+
+## I Keep Control Over My Own Subscription Stack
+
+One of the nicest things about this harness is that I do **not** need to hand everything over to a single platform.
+
+I can choose the stack per layer:
+
+- GitHub for issues, PRs, reviews and team collaboration
+- Codex/OpenClaw for the agent runtime and orchestration
+- my own cronjobs for pacing and automation
+- GitHub Actions and project-specific workflows for validation
+
+That matters more than most people think.
+
+If one tool suddenly changes pricing, rate limits, access rules or product direction, I do not have to rebuild my whole process. I can swap a layer, adjust a script, or change where I spend money. That is a much healthier position than locking your entire development flow into one subscription model.
+
+In other words: **AI acceleration is great, but ownership over the operating model is even better**.
+
+## GitHub Stays the Shared Source of Truth
+
+Another reason this setup works well is that the teamwork still happens in a place developers already understand: **GitHub**.
+
+The harness reads triggers from issues and comments, opens branches and PRs, and reports back into the same thread. That means:
+
+- the issue stays the planning object
+- the PR stays the change object
+- comments stay the discussion history
+- labels and workflows stay the operational state
+
+That is important when more than one person is involved.
+
+Without this, AI work quickly becomes personal and invisible. One person knows what the agent did because they watched the terminal, but the rest of the team only sees a mysterious branch show up somewhere. That does not scale.
+
+By keeping GitHub in the middle, the setup stays legible for humans. AI can move fast, but people can still review, intervene and decide.
+
+## Crons Spread the Load Over Time
+
+This is one of the most underrated parts of the setup.
+
+I do not want every issue, repair, retry and monitor action to fire at the exact same moment. That creates noisy logs, unnecessary competition for resources and a much harder debugging story.
+
+So the harness uses cron-based pacing:
+
+- one cron handles intake
+- another cron handles monitoring
+- follow-up actions such as retries or repair attempts happen in controlled intervals
+
+That gives the system breathing room.
+
+Instead of a chaotic burst model, I get a **time-distributed pipeline**. New work gets picked up steadily. Existing work gets checked again later. Failing work gets another chance without turning the whole setup into a thundering herd.
+
+That is not just nicer operationally. It is also better for team flow:
+
+- fewer collisions
+- easier prioritization
+- clearer logs
+- more predictable infrastructure usage
+
+## Validation Lives in Workflows, Not in Agent Confidence
+
+This is probably the biggest architectural point.
+
+I do not trust "the agent thinks it is done" as a release signal.
+
+The harness only becomes useful when validation is externalized into repeatable checks. That means the quality bar lives in workflows, not in the mood of the model.
+
+So the process is deliberately structured around things like:
+
+- branch and PR creation
+- CI checks
+- workflow results
+- explicit review moments
+- post-run monitoring
+
+That design choice changes everything.
+
+Because now the agent does not need to be magically reliable. It only needs to be useful inside a system with hard edges. It can write code, update tests, react to failures and open PRs, while the surrounding workflows decide whether the change is actually healthy.
+
+That is the difference between a fun demo and a real development harness.
+
+## Why This Feels Like a "Lekkere Setup"
+
+For me, a good AI development setup should feel calm, modular and honest.
+
+This one does.
+
+It feels good because:
+
+- I am not trapped in one subscription dependency
+- collaboration happens in GitHub where the team already works
+- cron scheduling prevents everything from happening at once
+- validation is explicit and repeatable
+- the system can be improved piece by piece without a rewrite
+
+That last point matters a lot.
+
+I do not have to stop everything and build a giant AI platform from scratch. I can improve one part at a time: better prompts, cleaner run artifacts, smarter retries, clearer monitor comments, tighter validation rules. The harness evolves without losing its shape.
+
+## My Practical Rule for AI Development
+
+If you want AI to help with real software, I would not start with "how do I make it more autonomous?"
+
+I would start with:
+
+1. How do I keep control over cost and subscriptions?
+2. How do I make the work visible to the team in GitHub?
+3. How do I spread the load so the system stays stable?
+4. How do I validate changes through workflows instead of vibes?
+
+That is exactly why this AIisajoke_v2 harness works for me.
+
+It is not flashy in the right places. It is strong in the boring places.
+
+And that is usually what you want if you are building something you actually plan to keep using.
+
+---
+
+_I build and document setups like this because the hard part of AI coding is not getting one successful output. The hard part is building a delivery system you still trust a month later. Want to talk about AI workflows, GitHub-driven delivery or practical automation? [Get in touch](/contact)._
